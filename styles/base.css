@@ -20,6 +20,7 @@ nav a{
     background-color: white;
     color: rgb(46, 3, 46);
     padding: 20px;
+    font-size: 20px;
 }
 header {
     display: grid;
@@ -40,7 +41,13 @@ ul {
 h1 {
     color: white;
     text-align: right;
+    font-size: 40px;
 
+}
+h2 {
+    text-decoration: underline;
+    font-size: 40px;
+    text-align: center;
 }
 /* @media screen {
     nav {
