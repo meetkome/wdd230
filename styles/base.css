@@ -19,7 +19,7 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 16px;
-    background-color: rgb(229, 255, 0);
+    background-color: rgb(56, 3, 40);
 }
 img {
     max-width: 50%;
@@ -34,7 +34,7 @@ ul {
 h1 {
     color: white;
     text-align: right;
-    
+
 }
 /* @media screen {
     nav {
