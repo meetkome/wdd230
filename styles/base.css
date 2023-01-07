@@ -1,0 +1,42 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&family=Dancing+Script&family=Open+Sans:wght@300&display=swap') */
+
+* {
+    box-sizing: border-box;
+}
+body {
+    display: grid;
+    height: 100vh;
+    font-size: 16px;
+    
+}
+nav {
+    display: flex;
+    background-color: white;
+    gap: 1rem;
+    padding: 1;
+}
+header {
+    display: grid;
+    padding: 30px;
+    align-items: center;
+    background-color: rgb(229, 255, 0);
+}
+img {
+
+}
+.card {
+
+}
+ul {
+
+}
+/* @media screen {
+    nav {
+        display: flex;
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1;
+    }
+} */
