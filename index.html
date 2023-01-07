@@ -10,42 +10,45 @@
     content="This is an assignment page for WDD230 created by Ohenekome Victory Igho" />
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <!-- <link rel="stylesheet" href="fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&family=Dancing+Script&family=Open+Sans:wght@300&display=swap"> -->
 </head>
 <body>
-    <nav>
-        <img src="images/menu.svg" alt="Menu">
-        <!-- <a href="file:///C:/Users/Kome/Desktop/hamburger.svg">Menu</a> -->
+    <nav><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" height="48" width="48"><path d="M5.5 36.8v-3.95h37v3.95Zm0-10.8v-4h37v4Zm0-10.85V11.2h37v3.95Z"/></svg>
+        <!-- <img src="images/menu.svg" alt="Menu"> -->
         <a href="https://www.linkedin.com/in/oghenekome-igho-890520179">Linkedin</a>
         <a href="https://www.byui.edu">BYU-Idaho</a>
     </nav>
     <header>
-        <img src="images/Me2.JPG" alt="A photo of me" width="150" height="200">
-        <h1>Oghenekome Victory igho</h1>
+        <img src="images/Me2.JPG" alt="A photo of me" width="150" height="180">
+        <h1>Oghenekome Victory Igho</h1>
     </header>
     <main>
         <h2>WDD 230: Course Activity Portal</h2>
-        <section class="card">
+        <section id="activities" class="card">
             <h3>Learning Activities</h3>
             <ul>
-                <li><a href=""></a>Week 1:</li>
-                <li><a href=""></a>Week 2:</li>
-                <li><a href=""></a>Week 3:</li>
-                <li><a href=""></a>Week 4:</li>
-                <li><a href=""></a>Week 5:</li>
-                <li><a href=""></a>Week 6:</li>
+                <li>Week 1:<a href="week01/holy-grail/holygrail.html">Grail</a></li>
+                <li>Week 2:<a href=""></a></li>
+                <li>Week 3:<a href=""></a></li>
+                <li>Week 4:<a href=""></a></li>
+                <li>Week 5:<a href=""></a></li>
+                <li>Week 6:<a href=""></a></li>
             </ul>
         </section>
-        <section class="card">
+        <section id="project" class="card">
             <h3>Project</h3>
-            <a href="">Timbuktu Chamber of Commerce</a>
+            <a href="week01/chamber-site-plan/chamber-site-plan.html">Olokonla Chamber of Commerce</a>
+        </section>
+        <section id="information" class="card">
             <h3>Information</h3>
-            <input type="text" name="" id="">
+            <div>Weather: </div>
+            <div>People Visited</div>
         </section>
     </main>
         
     
     <footer>
-        <p>&copy;<span id="year"></span> | oghenekome Victory Igho | Nigeria </p>
+        <p>&copy;<span id="year"></span> | Oghenekome Victory Igho | Nigeria </p>
         <p>last Modification:</p>
         <p class="highlight" id="lastModified"></p>
     </footer>
