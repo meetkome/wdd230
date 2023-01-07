@@ -17,18 +17,24 @@ nav {
 }
 header {
     display: grid;
-    padding: 30px;
-    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 16px;
     background-color: rgb(229, 255, 0);
 }
 img {
-
+    max-width: 50%;
+    max-height: auto;
 }
 .card {
 
 }
 ul {
 
+}
+h1 {
+    color: white;
+    text-align: right;
+    
 }
 /* @media screen {
     nav {
