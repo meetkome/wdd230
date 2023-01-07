@@ -10,7 +10,6 @@ body {
     background-color: rgb(223, 205, 219);
 }
 
-
 nav {
     display: flex;
     justify-content: right;
@@ -30,14 +29,20 @@ nav a{
     font-size: 20px;
 }
 
-
-
 header {
     display: grid;
     grid-template-columns: auto 1fr;
     /* grid-template-columns: repeat(3, 1fr); */
     padding: 20px;
     background-color: rgb(56, 3, 40);
+}
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 45px;
+    margin-top: 75px;
+    font-family: Open Sans;
+   
 }
 svg {
     filter: brightness(0) invert(1);
@@ -71,18 +76,14 @@ ul {
     color:rgba(56, 3, 40);
 }
 
-h1 {
-    color: white;
-    text-align: center;
-    font-size: 45px;
-    margin-top: 75px;
-    font-family: Open Sans;
-   
-}
+
 h2 {
     text-decoration: underline;
     font-size: 40px;
     text-align: center;
+    grid-column: 1/-1;
+    color: rgba(56, 3, 40);
+    border-bottom: 1px solid black;
 }
 h3 {
     background-color: rgba(56, 3, 40);
