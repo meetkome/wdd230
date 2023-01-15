@@ -138,6 +138,9 @@ nav #menu-button.close::before {
 
 div.hero img {
   width: 45%;
+  position: relative;
+  display: -webkit-box;
+  margin-left: 600px;
 }
 
 div.hero a {
@@ -159,7 +162,17 @@ div.hero a:hover {
   /* background-color: #fde33b; */
   color: black;
 }
-
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 0.25rem;
+  }
+  .social svg {
+    width: 32px;
+    height: auto;
+  }
+  
 main div.cards {
   display: flex;
   flex-direction: column;
