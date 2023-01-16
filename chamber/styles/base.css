@@ -5,7 +5,7 @@ body {
    
     font-size: 16px;
     background-color:#fcfcfb;
-    background-image: linear-gradient(to right, #fcfcfb, rgb(223, 223, 173));
+    background-image: linear-gradient(to right, #fcfcfb, rgba(248, 252, 37, 0.26));
     
 }
 
@@ -151,11 +151,13 @@ main div.cards {
 }
 
 main section {
-  background-color: #eee;
-  border: 1px solid #313131;
   max-width: 100%;
   padding: 1rem;
   /* background-color: #fde33b; */
+}
+.company {
+    
+ background-color: #fde33b;
 }
 main section h2 {
   margin-top: 0;
