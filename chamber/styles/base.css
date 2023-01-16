@@ -1,19 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
 
-  
-  #menu-button::before{
-    content: "≡";
-  }
-  
-  #menu-button.close::before {
-    content: "X";
-    font-size: 1rem;
-  }
+
+body {
+   
+    font-size: 16px;
+    background-color:#fcfcfb;
+    background-image: linear-gradient(to right, #fcfcfb, rgb(223, 223, 173));
+    
+}
+
   nav {
     display: flex;
     justify-content: left;
-    
-    background-image: radial-gradient(#fcfcfb, #a1cb74); 
+    background-color: none;
     gap: 1rem;
     padding: 1rem;
     
@@ -23,12 +22,10 @@ nav *:nth-child(1) {
 }
 nav a{
     text-decoration: none;
-    background-color: #fcfcfb;
-    color: black
-    
-}
-nav a:hover {
-    background-color: #fde33b;
+    background-color: rgb(223, 205, 219);
+    color: rgb(56, 3, 40);
+    padding: 20px;
+    font-size: 20px;
 }
 
 
@@ -48,7 +45,7 @@ nav .menu li a {
 	text-align: center;
 	width: 6rem;
 	padding: 1rem;
-	color: white;
+	color: black;
 	position: relative;
 	transition: background 0.5s ease-in-out;
 }
@@ -60,7 +57,7 @@ nav #menu-button::before {
 
 nav .menu li a:hover,
 nav .menu li:first-child a {
-	background: black;
+	background: rgba(56, 3, 40);
 	color: #fff;
 }
 
@@ -74,7 +71,16 @@ nav li a.open {
 
 nav #menu-button.close::before {
 	content: "X";
-} */
+}
+
+#menu-button::before{
+    content: "≡";
+  }
+  
+  #menu-button.close::before {
+    content: "X";
+    font-size: 1rem;
+  }
 /* ul {
     grid-column: 1/2;
     padding: 30px;
@@ -200,12 +206,6 @@ footer a {
     }
 }
 
-h1,
-h2,
-h3,
-h4 {
-    position: relative;
-}
 
 .weather h1 {
     float: right;
