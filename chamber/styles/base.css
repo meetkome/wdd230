@@ -1,51 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
-html,
-body {
-    background-color: #fcfcfb;
-    background-image: linear-gradient(to right, #fcfcfb, #a1cb74);
-    font-family: "Open Sans", sans-serif;
-  }
-  
-  h1,
-  h2,
-  h3,
-  header p {
-    font-family: "Bebas Neue", "Open Sans", sans-serif;
-    letter-spacing: 1.5px;
-  }
-  
-  header {
-    padding: 0.5rem;
-    display: grid;
-    gap: 0.5rem;
-    grid-template-columns: 50px auto auto 50px;
-    
-  }
-  .business-name h1, p{
-    color: black
-    
-}
-  header h1 {
-    margin: 0;
-    font-size: 2rem;
-  }
-  
-  header p {
-    margin: 0;
-  }
-  .business-logo {
-    max-width: 50px;
-    justify-self: center;
-    align-self: center;
-  }
-  #menu-button {
-    background: none;
-    border: none;
-    font-size: 2rem;
-    width: 48px;
-    height: 48px;
-    /* text-align: center; */
-  }
+
   
   #menu-button::before{
     content: "≡";
@@ -59,7 +13,7 @@ body {
     display: flex;
     justify-content: left;
     
-    /* background-image: radial-gradient(#fcfcfb, #a1cb74); */
+    background-image: radial-gradient(#fcfcfb, #a1cb74); 
     gap: 1rem;
     padding: 1rem;
     
@@ -120,7 +74,7 @@ nav li a.open {
 
 nav #menu-button.close::before {
 	content: "X";
-}
+} */
 /* ul {
     grid-column: 1/2;
     padding: 30px;
@@ -139,6 +93,7 @@ div.hero img {
   width: 45%;
   position: relative;
   margin-left: 600px;
+  float: right;
   margin-top: -100px;
 }
 
@@ -163,7 +118,8 @@ div.hero a:hover {
 }
 .call-to-action {
     text-align: right;
-    margin-right: -750px;
+  
+    float: right;
     padding: 100px;
     color: #fde33b;
 }
@@ -183,7 +139,7 @@ main div.cards {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  align-items: stretch;
+  /* align-items: stretch; */
   gap: 0.5rem;
   padding: 1rem 2rem;
 }
@@ -399,4 +355,4 @@ tr:nth-child(3) {
     100% {
         opacity: 1;
     }
-}
+} */
