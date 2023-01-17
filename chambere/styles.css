@@ -181,12 +181,6 @@ footer {
   footer a {
     color: black;
   }
-
-  .icon a{
-
-    text-decoration: none;
-    color: black;
-  }
 .weather-card h1 {
     float: right;
     color: black;
@@ -205,17 +199,17 @@ footer {
 .weather-card h3 {
     float: left;
     margin-right: 33px;
-    color: #777;
+    color: black;
     font-weight: 400;
     font-size: 1em;
     -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1) .1s;
 }
 
-span {
+/* span {
     margin-left: 24px;
     color: black;
     font-weight: 300;
-}
+} */
 
 span span {
     margin-left: 0;
@@ -280,7 +274,7 @@ span span {
 table {
     position: relative;
     top: 10px;
-    width: 100%;
+    width: 50%;
     text-align: center;
 }
 

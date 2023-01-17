@@ -10,7 +10,7 @@
     header p {
       font-size: 1.5rem;
     }
-    nav {
+    .navbar {
       justify-self: center;
       align-self: center;
     }
