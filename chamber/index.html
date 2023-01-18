@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webpage design</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
     <title>Eti-Osa Chamber of Commerce Home page</title>
     <meta name="description"
     content="Chamber of Commerce Website Home Page for WDD 230 class at BYU-Idaho">
@@ -17,15 +17,20 @@
     <meta property="og:image" content="https://images.app.goo.gl/ezPyra7S52Cxfwsv8">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
 </head>
 <body>
     <div class="main">
         <div class="navbar">
             <div class="icon">
-                <h2 class="logo">EtiOsA<span class="chamber">Chamber of Commerce</span> </h2>
+                <h2 class="logo">EtiOsA CMC</h2>
             </div>
             <div class="menu">
+                <button id="menu-button"></button>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -38,7 +43,7 @@
             </div>
         </div>
         <div class="news">
-            <h1>Today's News <span>And Updates</h1>
+            <h1>Today's News</h1>
             <p class="par">Onyeka, the Director, Transparent Protection Ltd. <br>
                 (TPL)/Gte, a Non-Governmental Organisation (NGO),
                 <br> said that the review would help curb 
@@ -51,68 +56,44 @@
             <img src="images/chamberimg.jpg" alt="Image of lagos" >
         </div>
         <div class="weather-card">
-            <h2>Lagos</h2>
-            <h3>Cloudy<span>Wind 10km/h <span class="dot">•</span> Precip 0%</span></h3>
-            <h1 >23°</h1>
-            <div class="sky">
-                <div class="sun"></div>
-                <div class="cloud">
-                    <div class="circle-small"></div>
-                    <div class="circle-tall"></div>
-                    <div class="circle-medium"></div>
-                </div>
-            </div>
-            <table>
-                <tr>
-                    <td>TUE</td>
-                    <td>WED</td>
-                    <td>THU</td>
-                    <td>FRI</td>
-                    <td>SAT</td>
-                </tr>
-                <tr>
-                    <td>30°</td>
-                    <td>34°</td>
-                    <td>36°</td>
-                    <td>34°</td>
-                    <td>37°</td>
-                </tr>
-                <tr>
-                    <td>17°</td>
-                    <td>22°</td>
-                    <td>19°</td>
-                    <td>23°</td>
-                    <td>19°</td>
-                </tr>
-            </table>
+
+                <h2>Weather</h2>
+                <p>30°F</p>
+                <p>Rainy</p>
         </div>
 
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>    
     </div>
+    <div class="card">
+        <section class="company" id="company1">
+            <h2>Company1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        </section>
+        <section class="company" id="company2">
+            <h2>Company2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        </section>
+        <section class="company" id="company3">
+            <h2>Company3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        </section> 
+    </div>
     <footer>
-        <section>
+       
             <!-- <img class="logo" src="images/Etiosa-chamber-logo.png" alt="Eti-Osa Chamber of Commerce Logo"> -->
-            <h2 class="logo">EtiOsA <span class="chamber"> Chamber of Commerce</span> </h2>
-            <div>
-                <p>Etiosa Chamber of Commerce</p>
-                <p>1 Happy Home Estate, Olokonla.</p>
-            </div>
-        </section>
-        <section>
-            <p>info@etiosabusinesses.org</p>
-            <p><a href="tel:+2341231230000">234-123-123-0000</a></p>
-        </section>
-        <section>
-            <p>&copy;2023 Eti-Osa Chamber of Commerce </p>
-            <p>WDD 230 | BYU-Idaho | </p>
-            <p>Oghenekome Igho | </p>
+            <h3 class="name">Etiosa Chamber of Commerce</h3>
+            <h3 class="address">1 Happy Home Estate, Olokonla.</h3>
+            <h3 class="email">info@etiosabusinesses.org</h3>
+            <h3><a href="tel:+2341231230000">234-123-123-0000</a></h3>
+            <h3 class="copyright">&copy;2023 Eti-Osa Chamber of Commerce </h3>
+            <h3>WDD 230 BYU-Idaho  | Oghenekome Igho
             <div class="icon">
                 <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
                 <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
                 <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
             </div>
             <p class="highlight">Last modified: <span id="lastModified"></span></p>
-        </section>
     </footer>
+    
 </body>
 </html>
