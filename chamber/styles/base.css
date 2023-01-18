@@ -4,6 +4,7 @@
 }
 body {
     background: linear-gradient(to top, #fcfcfb , #b1e99f, #fde33b, #fcfcfb 90%), url(1.jpg);
+    width: 1600px;
 }
 .main{
     width: 100%;
@@ -15,29 +16,44 @@ body {
 }
 
 .navbar {
-    width: 1400px;
+    width: 1600px;
     height: 75px;
     margin: auto;
 }
+.icon img{
+    float: left;
+    margin-top: 35px;
+    margin-left: 20px;
+    height: 40px;
+    justify-self: center;
+    align-self: center;
+}
 
 .icon {
-    width: 200px;
+    width: 300px;
     float: left;
     height: 70px;
+    
+}
+.chamber{
+    font-family: Bebas Neue;
+    font-size: 18px;
+    margin-top: 45px;
+    float: left;
+    margin-left: 0;  
+    
+  
 }
 .logo {
     color: black;
     font-size: 25px;
     font-family: Bebas Neue;
-    padding-left: 20px;
+    padding-left: 2px;
     float: left;
     padding-top: 20px ;
+    margin: 0;
 }
-.chamber{
-    font-family: Bebas Neue;
-    font-size: 15px;
-  
-}
+
 .menu {
     width: 400px;
     float: left;
@@ -159,7 +175,7 @@ ul li a:hover {
     width: 400px;
     height: 500px;
     position: absolute;
-    top: 20px;
+    top: 79px;
     left: 850px;
 }
 
