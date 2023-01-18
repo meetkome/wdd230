@@ -22,7 +22,7 @@ body {
 }
 .icon img{
     float: left;
-    margin-top: 35px;
+    margin-top: 30px;
     margin-left: 20px;
     height: 40px;
     justify-self: center;
@@ -36,19 +36,22 @@ body {
     
 }
 .chamber{
-    font-family: Bebas Neue;
-    font-size: 18px;
-    margin-top: 45px;
-    float: left;
-    margin-left: 0;  
-    
-  
-}
-.logo {
     color: black;
     font-size: 25px;
     font-family: Bebas Neue;
-    padding-left: 2px;
+    padding-left: 3px;
+    float: left;
+    margin: 0;
+    font-family: Bebas Neue;
+    font-size: 18px;
+    margin-top: 50px;
+    margin-left: -68px;
+}
+.logo {
+    color: black;
+    font-size: 35px;
+    font-family: Bebas Neue;
+    padding-left: 3px;
     float: left;
     padding-top: 20px ;
     margin: 0;
@@ -85,9 +88,9 @@ ul{
 }
 ul li {
     list-style: none;
-    margin-left: 62px;
+    margin-left: 32px;
     margin-top: 57px;
-    font-size: 14px;
+    font-size: 15px;
 }
 ul li a{
     text-decoration: none;
@@ -116,6 +119,9 @@ ul li a:hover {
     color: #fcfcfb;
     font-size: 16px;
 }
+.join:hover {
+    color:#fde33b;
+}
 .news {
     width: 1400px;
     height: auto;
@@ -125,7 +131,7 @@ ul li a:hover {
 }
 .news .par{
     padding-left: 20px;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     font-family: Open Sans;
     letter-spacing: 1px;
     line-height: 30px;
@@ -177,6 +183,7 @@ ul li a:hover {
     position: absolute;
     top: 79px;
     left: 850px;
+   
 }
 
 .card {
