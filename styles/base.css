@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&family=Dancing+Script&family=Open+Sans:wght@300&display=swap')
 
-*{
-    box-sizing: border-box;
-}
-body {
-    display: grid;
-    height: 100vh;
-    font-size: 16px;
-    background-color: rgb(223, 205, 219);
-    
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Open Sans", Arial, Helvetica;
+    background-color: rgb(223, 205, 219);  
 }
 
 nav {
@@ -83,7 +82,7 @@ header {
     padding: 20px;
     background-color: rgb(56, 3, 40);
 }
-h1 {
+header h1 {
     color: white;
     text-align: center;
     font-size: 45px;
@@ -91,12 +90,13 @@ h1 {
     font-family: Alegreya Sans SC;
     text-transform: uppercase;
 }
-svg {
+/* svg {
     filter: brightness(0) invert(1);
     color: yellow;
-}
+} */
 #profile {
     max-width: 125px;
+    height: auto;
     grid-column: 1 / 2;
     padding: 10px;
     margin-left: 3rem;
@@ -104,11 +104,16 @@ svg {
 
 main {
     color: black;
-    max-width: 760px;
-    margin: 0 auto;
-    display: block;
-    margin-bottom: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
 }
+main h2 {
+    border-bottom: 1px solid black;
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem;
+  }
 main.dark,
 main.dark a {
     background-color: rgb(44, 41, 41);
@@ -119,21 +124,46 @@ main.dark section {
     border: 2px solid rgb(150, 150, 150);
     color: white
 }
+.hero img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .hero {
+    position: relative;
+  }
+  
+  .herolabel {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    background-color: rgba(228, 228, 228, 0.681);
+    border: 1px solid rgba(0, 0, 0, 0.75);
+    padding: 1rem;
+    opacity: 0.8;
+  }
+  
+  .herolabel p {
+    margin: 0;
+    padding: 0.25rem;
+    font-weight: 800;
+    font-size: 1.1rem;
+    font-family: "Open Sans", sans-serif;
+  }
+    ul {
+        list-style: none;
+        padding-left: 20px;
+      }
 
-.card a {
-    grid-column: 1/2;
-}
-ul {
-    grid-column: 1/2;
-    padding: 30px;
-    background-color: rgb(223, 205, 219);;
-    border-radius: 15px;
-    font-size: 16px;
-    color:rgba(56, 3, 40);
-}
-
-
-h2 {
+section {
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px 3px rgba(89, 100, 108, 0.5);
+    margin: 1rem;
+    line-height: 2rem;
+  }
+  
+  section h2 {
     text-decoration: underline;
     font-size: 40px;
     text-align: center;
@@ -141,37 +171,18 @@ h2 {
     color: rgba(56, 3, 40);
     border-bottom: 1px solid black;
 }
-h3 {
+section h3 {
     background-color: rgba(56, 3, 40);
     color: white;
     text-align: center;
     margin: 0;
     border-radius: 8px 8px 0 0;
 }
-section {
-    border: 2px solid black;
-    border-radius: 10px;
-    box-shadow: 2px 2px 3px 3px rgba(89, 100, 108, 0.5);
-    margin: 2rem;
-}
-#activities {
-    grid-column: 1 / 2;
-    grid-row: 2/4;
-    line-height: 2rem;
-}
 
-#project {
-    grid-column: 2 / 3;
-    text-align: center;
-}
-
-#information {
-    grid-column: 2 / 3;
-}
-
-#information div{
-    padding: 10px 0 0 20px;
-}
+  .highlight {
+    font-size: 0.75rem;
+    color: yellow;
+  }
 .highlight {
     text-align: center;
     font-size: 12px;
