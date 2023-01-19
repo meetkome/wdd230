@@ -39,20 +39,20 @@
         <h1>Oghenekome Victory Igho</h1>
     </header>
     <main>
-        <div class="hero">
             <picture>
                 <source media="(max-width: 400px)" srcset="images/temple-small.webp">
-                <img src="images/temple-hero.webp" alt="Image of Columbus Ohio Temple" loading="lazy" width="900"
+                <img src="images/temple-small.webp" alt="Image of Columbus Ohio Temple" loading="lazy" width="900"
                     height="420">
             </picture>
-        </div>
-        <h2>WDD 230: Course Activity Portal</h2>
+            <div class="herolabel">
+                <p>Aba Nigeria Temple</p>
+            </div>
         <section id="activities" class="card">
             <h3>Learning Activities</h3>
             <ul>
                 <li>Week 1:<a href="https://meetkome.github.io/wdd230/week01/holygrail.html">Grail</a> | <a href="https://meetkome.github.io/wdd230/week01/media-query.html">Media Query</a> |  <a href="https://meetkome.github.io/wdd230/week01/chamber-site-plan" target="_blank"> Chamber</a> </li>
                 <li>Week 2:<a href="https://meetkome.github.io/wdd230/week02/design.html">Design</a> | <a href="https://codepen.io/meetkome/pen/dyjWgEK">Responsive menu</a> | <a href="https://meetkome.github.io/wdd230/week02/bom.html">Book of Mormon</a></li>
-                <li>Week 3:<a href="week03/images/landscape.webp">WebP</a>"></li>
+                <li>Week 3:<a href="week03/images/landscape.webp">WebP</a> | <a href="week03/lazyload.html">Lazy Loading</a></li> | <a href="https://codepen.io/meetkome/pen/jOpaOLj">Responsive Images</a> | <a href="week03/bom.html">BOM localStorage</a></li>
                 <li>Week 4:<a href=""></a></li>
                 <li>Week 5:<a href=""></a></li>
                 <li>Week 6:<a href=""></a></li>
@@ -66,11 +66,19 @@
         <section id="information" class="card">
             <h3>Information</h3>
             <div>Weather: </div>
-            <div>People Visited</div>
+            <p>
+                <span class="label">Number of Visits: </span>
+                <span class="visits"></span>
+            </p>
         </section>
-    </main>
-        
     
+    <iframe id="maps"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126861.45110009125!2d3.466055207240706!3d6.468316383270376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf6b98102a21f%3A0x25ffb5c277098859!2sEti-Osa%2C%20Lagos!5e0!3m2!1sen!2sng!4v1674146248327!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </iframe>
+        
+    </main>
+           
     <footer>
         <p>&copy;<span id="year"></span> | Oghenekome Victory Igho | Nigeria </p>
         <p class="highlight">Last modified: <span id="lastModified"></span></p>
