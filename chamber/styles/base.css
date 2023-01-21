@@ -1,118 +1,109 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+/* #content{
+    max-width: 1600px;
+    margin: 0 auto;
+} */
 body {
     background: linear-gradient(to top, #fcfcfb , #b1e99f, #fde33b, #fcfcfb 90%), url(1.jpg);
-    
     font-family: 'Open Sans', 'Benas Neue';
-    font-size: 16x;
-    margin: 0;
-    padding: 0;
-}
-.main{
-    width: 100%;
-    /* background: linear-gradient(to top, #fcfcfb , #b1e99f, #fde33b, #fcfcfb 75%), url(1.jpg); */
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-
 }
 
-.navbar {
-    width: 1600px;
-    height: 75px;
-    margin: auto;
-}
-.icon img{
-    float: left;
-    margin-top: 91px;
-    margin-left: 20px;
-    height: 45px;
-    justify-self: center;
-    align-self: center;
+h1,
+h2,
+h3,
+header p {
+  font-family: "Bebas Neue", "Open Sans", sans-serif;
+  letter-spacing: 1.5px;
 }
 
-.icon {
-    width: 300px;
-    float: left;
-    height: 70px;
-    
+header {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: left;
+
+
+  /* gap: 0.5rem; */
+  /* grid-template-columns: auto 50px auto 50px; */
 }
-.chamber{
-    color: black;
-    font-size: 25px;
-    font-family: Bebas Neue;
-    padding-left: 2px;
-    float: left;
-    margin: 0;
-    font-family: Bebas Neue;
-    font-size: 18px;
-    margin-top: 115px;
-    margin-left: -68px;
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
 }
+
+header p {
+  margin: 0;
+}
+
 .logo {
-    color: black;
-    font-size: 35px;
-    font-family: Bebas Neue;
-    padding-left: 2px;
-    float: left;
-    padding-top: 20px ;
-    margin-top: 65px;
-}
-
-.menu {
-    width: 400px;
-    float: left;
-    height: 70px;
+  max-width: 50px;
+  justify-self: center;
+  align-self: center;
 }
 
 #menu-button {
-    background: none;
-    border: none;
-    font-size: 2rem;
-    width: 48px;
-    height: 48px;
-    text-align: center;
-  }
-  
-  #menu-button::before{
-    content: "≡";
-  }
-  
-  #menu-button.close::before {
-    content: "X";
-    font-size: 1rem;
-  }
-ul{
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
 }
-ul li {
-    list-style: none;
-    margin-left: 32px;
-    margin-top: 115px;
-    font-size: 15px;
+
+#menu-button::before {
+  content: "≡";
 }
-ul li a{
-    text-decoration: none;
-    color: black;
-    font-family: Open Sans;
-    font-weight: bold;
-    transition: 0.4s ease-in-out;
+
+#menu-button.close::before {
+  content: "X";
+  font-size: 1rem;
 }
-ul li a:hover {
-    color: #b1e99f;
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  list-style: none;
+  z-index: 1;
+  opacity: 0.9;
+}
+nav ul li{
+    margin: auto;
+    display: inline;
+    justify-content: left;
+}
+nav ul.open {
+  display: block;
+  background-color: #fde33b;
+  margin: 0;
+  width: 150px;
+  position: absolute;
+  top: 4rem;
+  right: 0;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem;
+  transition: 0.5s;
+}
+
+nav ul li:hover a {
+  background-color: #fde33b;
+  color: black;
+}
+
+nav ul li.active {
+  text-decoration: underline 2px #b59d45;
 }
 .join {
     width: 100px;
-    float: left;
-    margin-left: 670px;
+    float: right;
+    /* display: flex; */
+    flex-direction: right;
+    margin-left: 500px;
     background: black;
     height: 30px;
-    margin-top: 115px;
     border-radius: 10px;
     text-decoration: none;
     font-family: Open Sans;
@@ -126,18 +117,21 @@ ul li a:hover {
 .join:hover {
     color:#fde33b;
 }
+main, section{
+    text-align: center;
+}
 .home-grid{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(8, 1fr);
 }
 .news {
-    grid-column: 1/3;
-    grid-row: 1/1;
+    grid-column: 1/2;
+    grid-row: 2/2;
+    margin-top: 100px;
     margin-left: 25px;
-    margin-top: -100px;
+   
 }
 .news .par{
-    padding-left: 20px;
     padding-bottom: 20px;
     font-family: Open Sans;
     letter-spacing: 1px;
@@ -148,20 +142,18 @@ ul li a:hover {
 .news h1{
     font-family: Bebas Neue;
     font-size: 40px;
-    padding-left: 20px;
-    margin-top: 2px;
     text-decoration: solid;
     
 }
 .contact{
     grid-column: 1/3;
-    grid-row: 2/3;
+    grid-row: 3/3;
     margin-left: 25px;
     margin-top: -50px;
 }
 .contact.jn {
     width: 150px;
-    float: left; 
+    /* float: left;  */
     height: 30px;
     margin-top: 75px;
     padding: 15px, 20px;
@@ -178,6 +170,7 @@ ul li a:hover {
 .contact .discover {
     width: 100px;
     height: 30px;
+    margin-left: 10px;
     text-decoration: none;
     font-family: Open Sans;
     cursor: pointer;
@@ -191,22 +184,19 @@ ul li a:hover {
     font-size: 12px;
 } 
 .hero-card{
-    grid-column: 2/3;
-    grid-row: 1/1;
+    grid-column: 3/5;
+    grid-row: 1/3;
 }
 .hero-img {
     width: 500px;
     height: 600px;
     position: absolute;
-    top: 79px;
-    left: 750px;
-   
+  
 }
 .weather-card {
-    grid-column: 3/3;
-    grid-row: 1/1;
-    margin: 0 auto;
-    margin-top: -20%;
+    grid-column: 6/7;
+    grid-row: 2/2;
+    /* margin: 0 auto; */
     padding: 5px 30px;
     margin-left: 300px;
     width: 200px;
@@ -217,38 +207,45 @@ ul li a:hover {
     -webkit-animation: open 2s cubic-bezier(.39, 0, .38, 1);
 }
 .company1 {
-    grid-column: 1/3;
-    grid-row: 2/3;
-    margin-left: 50px;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin-left: 25px;
+
   }
   .company2 {
-    grid-column: 2/3;
-      grid-row: 2/3;
+    grid-column: 4/5;
+      grid-row: 3/4;
   }
  .company3 {
-    grid-column: 3/3;
-    grid-row: 2/3;
+    grid-column: 6/7;
+    grid-row: 3/4;
+    margin: 0 55px 0 -55px;
    
   }
   .company1, .company2, .company3{
     margin-top: 300px;
-    width: 95%;
-    height: 300px;
-   box-shadow: 4px 4px 4px #fcfcfb;
+    height: 200px;
+    
     border: 1px solid #b1e99f;
-    margin-left: 45px;
     transition: transform .5s;
     background-color: #fcfcfb;
     padding-bottom: 15px;
-    padding: 20px;
-    text-align: justify;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 5px 5px 10px #01302a;
+    margin: 25px auto;
+    margin: 25px auto;
+    
 }
-
+.icon a{
+    margin-top: 20px;
+    text-decoration: none;
+    color: black;
+  }
   footer {
-
     margin-top: 50px; 
     display: flex;
-    align-items: center;
+    flex-direction: column;
 }
   
 footer h3{
@@ -271,8 +268,39 @@ footer h3 a:hover{
 footer .icon{
     padding-top: 15px;
 }
-  /* .icon a{
-    margin-top: 20px;
-    text-decoration: none;
-    color: black;
-  } */
+
+
+
+/* DISCOVER */
+  div.discover {
+    background-color: #b1e99f;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  div.discover h1 {
+    text-align: center;
+    margin-bottom: 0;
+    border-bottom: solid 2px #224b0c;
+  }
+  
+  div.discover hr {
+    height: 2px;
+    background-color: #224b0c;
+    margin: 0;
+  }
+  section.demographics {
+    text-align: center;
+    margin: 1rem;
+  }
+  
+  section.discover-imgs figure {
+    text-align: center;
+  }
+  
+  section.discover-imgs img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: solid 1px #224b0c;
+  }

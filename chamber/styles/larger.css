@@ -1,64 +1,123 @@
 @media only screen and (min-width: 40rem) {
-    .main {
-      grid-template-columns: 64px repeat(3, 1fr);
-    }
-  
-    .main h1 {
-      font-size: 2.5rem;
-    }
-  
-    .main p {
-      font-size: 1.5rem;
-    }
-    .navbar {
-      justify-self: center;
-      align-self: center;
-    }
-  
-    .logo {
-      max-width: 64px;
-    }
-  
-    #menu-button {
-      display: none;
-    }
-  
-    ul,
-    ul.open {
-      display: flex;
-    }
-  
-    ul li a {
-      color: black;
-    }
-  
-    div.hero a {
-      top: 10%;
-      left: 10%;
-    }
-  
-    main div.cards {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-gap: 0.5rem;
-    }
-  
-    footer {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 1rem;
-      place-items: center;
-    }
-  
-    footer section:nth-child(1) {
-      display: grid;
-      grid-template-columns: 55px auto;
-    }
-  
-    footer section:nth-child(3) {
-      grid-column: 1 / -1;
-      display: flex;
-      flex-direction: row;
-      gap: 10px;
-    }
+  /* HOME */
+  header {
+    grid-template-columns: 64px 1fr 1fr auto;
   }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  header p {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    justify-self: center;
+    align-self: center;
+   
+  }
+
+  .logo {
+    max-width: 64px;
+  }
+
+  #menu-button {
+    display: none;
+  }
+
+  nav ul,
+  nav ul.open {
+    display: flex;
+  }
+
+  nav ul li a {
+    color: black;
+  }
+
+
+  /* .hero-img {
+    /* top: 10%; */
+    /* left: 10%; */
+
+  } */
+
+  .home-grid {
+    display: grid;
+    grid-template-columns: repeat (8, 1fr);
+    grid-gap: 0.5rem;
+  }
+
+ .news {
+    grid-column: 4/ 5;
+    grid-row: 1 / 2;
+  }
+
+  section.events {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+
+  section.weather {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    place-items: center;
+  }
+
+  footer section:nth-child(1) {
+    display: grid;
+    grid-template-columns: 75px auto;
+  }
+
+  footer section:nth-child(3) {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  div.discover {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    background-color: transparent;
+  }
+
+  div.discover h1 {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    font-size: 2.5rem;
+  }
+
+  div.discover hr {
+    display: none;
+  }
+
+  section.demographics {
+    background-color: #fde33b;
+    align-self:flex-start;
+    position: sticky;
+    top: 20%;
+  }
+
+  section.discover-imgs {
+    grid-column: 2 / 3;
+  }
+
+  section.discover-imgs img {
+    transition: transform 0.5s;
+  }
+
+  section.discover-imgs img:hover {
+    border: none;
+    transform: scale(1.02);
+    box-shadow: 3px 3px 10px #224b0c;
+  }
+}
