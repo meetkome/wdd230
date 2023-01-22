@@ -17,12 +17,12 @@ header p {
 
 header {
   padding: 0.5rem;
-  display: flex;
-  flex-direction: left;
+  display: grid;
+  /* flex-direction: left; */
 
 
   /* gap: 0.5rem; */
-  /* grid-template-columns: auto 50px auto 50px; */
+  grid-template-columns: 150px auto;
 }
 
 header h1 {
@@ -60,15 +60,16 @@ header p {
 nav ul {
   margin: 0;
   padding: 0;
-  display: inline;
+  /* display: inline; */
   list-style: none;
   z-index: 1;
   opacity: 0.9;
 }
 nav ul li{
     margin: auto;
-    display: inline;
+    /* display: inline; */
     justify-content: left;
+    
 }
 nav ul.open {
   display: block;
