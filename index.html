@@ -43,7 +43,7 @@
                 <p>Aba Nigeria Temple</p>
             </div>
         </div>
-
+    <div class="cards">
         <section id="activities" class="card">
             <h3>Learning Activities</h3>
             <ul>
@@ -69,102 +69,71 @@
                 <span class="visits"></span>
             </p>
         </section>
-    
+    </div>
     <iframe id="maps"
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126861.45110009125!2d3.466055207240706!3d6.468316383270376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf6b98102a21f%3A0x25ffb5c277098859!2sEti-Osa%2C%20Lagos!5e0!3m2!1sen!2sng!4v1674146248327!5m2!1sen!2sng" 
     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
     </iframe>
     
-    <h4 class="form-heading">User Feedback Form</h4><hr>
-    <div class="form">
-        
-        <div class="input-msg">
-          <form id="formId">
-            <fieldset>
-            <legend>Sender Information</legend>
-            <label class="top">Full Name* <input id="name" type="text" name="fullname" required></label>
-            <label class="top">Email* 
-                <input id="email" type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                 placeholder="someone@gmail.com" required></label>
-            <label class="top">Page Rating* [ <span id="rating"></span> ]:<input type="range" id="r" min="1" max="10" name="rate" list="five"></label>
-            <div class="ratinglabels">
-                <span class="ratevalue">1</span>
-                <span class="ratevalue">2</span>
-                <span class="ratevalue">3</span>
-                <span class="ratevalue">4</span>
-                <span class="ratevalue">5</span>
-                <span class="ratevalue">6</span>
-                <span class="ratevalue">7</span>
-                <span class="ratevalue">8</span>
-                <span class="ratevalue">9</span>
-                <span class="ratevalue">10</span>
-            </div>
-            <!--pattern="(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{3,6}$"-->
-            <label class="top">Username:<input id="username" pattern="(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{5,12}$" type="password" name="keyphrase" required title="Input must be between 5-12 characters, at least one Capital and Small letter, one digit and one special Character">
-            </label>
-            <label class="top">Re-enter Username: <input id="username2" type="password" name="keyphrase" 
-                pattern="(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{5,12}$" required></label>
-            <label for="comments" class="top">Message:<textarea id="comments" name="comments" required></textarea></label>
-            </fieldset>
-            <input onclick="myForm()" type="submit" value="Send Your Message" class="submitBtn" id="submitBtn">
-        </form>
-        <datalist id="five">
-            <option label="1">1</option>
-            <option label="2">2</option>
-            <option label="3">3</option>
-            <option label="4">4</option>
-            <option label="5">5</option>
-            <option label="6">6</option>
-            <option label="7">7</option>
-            <option label="8">8</option>
-            <option label="9">9</option>
-            <option label="10">10</option>
-            
-        </datalist>
-    </div>
-        <div class="output-msg">
-            
-            <fieldset>
-                <legend> Submitted Information</legend>
-            <table>
-                
-                <caption>Table 1: HTML Table Output</caption>
+    <div id="form">
+        <section>
+            <form id="reviewForm">
+                <label>Full Name*<input type="text" name="fname" id="fname" required></label>
+                <label>Email*<input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
+                <label id="rateLabel" for="r">Page Rating [ <span id="rating"></span> ]</label>
+                <div class="rangecontainer">
+                    <input type="range" min="1" max="10" id="r" name="r" list="ten">
+                    <div class="ratinglabels">
+                        <span class="ratevalue">1</span>
+                        <span class="ratevalue">2</span>
+                        <span class="ratevalue">3</span>
+                        <span class="ratevalue">4</span>
+                        <span class="ratevalue">5</span>
+                        <span class="ratevalue">6</span>
+                        <span class="ratevalue">7</span>
+                        <span class="ratevalue">8</span>
+                        <span class="ratevalue">9</span>
+                        <span class="ratevalue">10</span>
+                    </div>
+                </div>
+                <datalist id="ten">
+                    <option label="1">1</option>
+                    <option label="2">2</option>
+                    <option label="3">3</option>
+                    <option label="4">4</option>
+                    <option label="5">5</option>
+                    <option label="6">6</option>
+                    <option label="7">7</option>
+                    <option label="8">8</option>
+                    <option label="9">9</option>
+                    <option label="10">10</option>
+                </datalist>
+
+
+                <div id="usernameMessage"></div>
+                <label>Username*<input type="password" id="username1" name="username1" required
+                        pattern="(?=.*?[A-Za-z0-9])(?=.*?[#?!@$%^&*-]).{5,12}$"></label>
+                <label>Re-enter Username*<input type="password" id="username2" name="username2" required
+                        pattern="(?=.*?[A-Za-z0-9])(?=.*?[#?!@$%^&*-]).{5,12}$"></label>
+
+                <input id="submitBtn" type="submit" value="Send Review">
+            </form>
+        </section>
+
+        <section>
+            <table class="submitReview">
+                <caption>Submitted Review</caption>
                 <thead>
-                  <tr>
-                    <th colspan="2">Form Input</th>
-                  </tr>
-                  <tr>
-                    <th>Field</th>
-                    <th>Value</th>
-                    
-                  </tr>
+                    <tr>
+                        <th>Field</th>
+                        <th>Value</th>
+                    </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <th>Name:</th>
-                    <td id="filled-name"></td>
-                    
-                  </tr>
-                  <tr>
-                    <th>Email:</th>
-                    <td id="filled-email"></td>
-                    
-                  </tr>
-                  <tr>
-                    <th>Rating:</th>
-                    <td id="filled-rating"></td>
-                    
-                  </tr>
-                  <tr>
-                    <th>Username:</th>
-                    <td id="filled-username"></td>
-                    
-                  </tr>
+
                 </tbody>
-            
-              </table>
-            </fieldset>  
-        </div>
+            </table>
+        </section>
     </div>
     </main>
            

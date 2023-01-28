@@ -41,3 +41,35 @@ if (numVisits !== 0) {
 numVisits++;
 // store the new number of visits value
 localStorage.setItem("visits-ls", numVisits);
+
+//submit form
+const submitBtn = document.querySelector("#submitBtn");
+const submitReview = document.querySelector(".submitReview tbody");
+const reviewForm = document.querySelector("#reviewForm");
+
+document.querySelector("#reviewForm").addEventListener("submit", function (event) {
+  event.preventDefault();
+});
+
+submitBtn.addEventListener("click", () => {
+  submitReview.textContent = "";
+  const inputName = document.querySelector("input[name=fname]");
+  addLines("Name", inputName.value);
+  const inputEmail = document.querySelector("input[name=email]");
+  addLines("Email", inputEmail.value);
+  const inputRating = document.querySelector("input[type=range]");
+  addLines("Rating", inputRating.value);
+  const inputUsername = document.querySelector("input[name=username1]");
+  addLines("Username", inputUsername.value);
+});
+
+function addLines(field, value) {
+  const column1 = document.createElement("td");
+  column1.textContent = field;
+  const column2 = document.createElement("td");
+  column2.textContent = value;
+  const row = document.createElement("tr");
+  row.appendChild(column1);
+  row.appendChild(column2);
+  submitReview.appendChild(row);
+}
