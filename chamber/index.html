@@ -34,12 +34,13 @@
                 <li class="active"><a class="menu-items" href="discover.html">Discover</a></li>
                 <li><a class="menu-items" href="#">Directory</a></li>
                 <li><a class="menu-items" href="#">About</a></li>
-                <button class="join"><a href="#">Join Us</a></button>
+                <button class="join"><a href="join.html">Join Us</a></button>
             </ul>
         </nav>
     </header>
     <main class="home-grid">
-        <section class="news">
+        <div class="cards">
+            <section class="news">
                 <h1>Today's News</h1>
                 <p class="par">Onyeka, the Director, Transparent <br>
                     Protection Ltd. (TPL)/Gte, a Non-Governmental <br>
@@ -50,6 +51,7 @@
         <section class="contact">
             <button class="jn"><a href="#">Contact</a></button> 
             <button class="discover"><a href="#">Discover +</a></button>
+
             </span> 
         </section>
                 
@@ -61,41 +63,55 @@
                 <p>30°F</p>
                 <p>Rainy</p>
         </section>
-        <section class="company1">
+        <section class="company" id="company1">
             <h2>Company1</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
         </section>
-        <section class="company2">
+        <section class="company" id="company2">
             <h2>Company2</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
         </section>
-        <section class="company3">
+        <section class="company" id="company3">
             <h2>Company3</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        </div>
+        
         </section> 
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>    
     </main>
     
     <footer>
-       
-            <!-- <img class="logo" src="images/Etiosa-chamber-logo.png" alt="Eti-Osa Chamber of Commerce Logo"> -->
-            <div class="icon"> 
-                <img src="images/logo.png" alt="">
-                <p class="logo">EtiOsa</p>
-                <p class="chamber">Chamber of Commerce</p>
-            </div>
-            <h3 class="address">1 Happy Home Estate, Olokonla.</h3>
-            <h3 class="email">info@etiosabusinesses.org</h3>
-            <h3><a href="tel:+2341231230000">234-123-123-0000</a></h3>
-            <h3 class="copyright">&copy;2023 Eti-Osa Chamber of Commerce </h3>
-            <h3>WDD 230 BYU-Idaho  | Oghenekome Igho
-            <div class="icon">
-                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-                <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
-                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-            </div>
-            <p class="highlight">Last modified: <span id="lastModified"></span></p>
-    </footer>
-   
+        <footer>
+            <section>
+                <img class="logo" src="images/logo.png" alt="EtiOsa Chamber of Commerce Logo">
+                <div>
+                    <p>Eti-Osa Chamber of Commerce</p>
+                    <p>Happy Homes Estate</p>
+                    <p>Lagos State</p>
+                </div>
+            </section>
+            <section>
+                <p>info@etiosashamrocks.org</p>
+                <p><a href="tel:18001234567">1-800-123-4567</a></p>
+            </section>
+            <section>
+                <div class="icon">
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                </div>
+            </section>
+            <section>
+                <p>&copy;2023 Eti-Osa Chamber of Commerce | </p>
+                <p>WDD 230 | BYU-Idaho | </p>
+                <p>Oghenekome Igho | </p>
+                <p class="highlight">Last modified: <span id="lastModified"></span></p>
+            </section>
+
+        </footer>
+
+    
+    
+    <script src="scripts/chamber.js"></script>
 </body>
 </html>

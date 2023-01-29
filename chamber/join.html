@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="images/favicon.ico">
 </head>
-<body id="content">
+<body>
     <header>
         <img class="logo" src="images/logo.png" alt="Eti-Osa Chamber of Commerce Logo">
         <div>
@@ -34,67 +34,64 @@
                 <li class="active"><a class="menu-items" href="discover.html">Discover</a></li>
                 <li><a class="menu-items" href="#">Directory</a></li>
                 <li><a class="menu-items" href="#">About</a></li>
-                <button class="join"><a href="join.html">Join Us</a></button>
+                <button class="join"><a href="#">Join Us</a></button>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="discover">
-            <h1>Places Around Eti-Osa</h1>
-            <section class="demographics">
-                <h2>Demographic Summary</h2>
-                <p><strong>Area:</strong> 174.066 square kilometres</p>
-                <p><strong>Total Population:</strong> 50,500</p>
-                <p><strong>Median Age:</strong> 39.5</p>
-                <p><strong>Total Households:</strong> 18,000</p>
-                <p><strong>Average Household Size:</strong> 2.77</p>
-                <p><strong>Diversity Index:</strong> 48.5</p>
-                <p><strong>Number of Businesses:</strong> 2,800</p>
-                <p><strong>Median Household Income:</strong> $148,493</p>
-                <h2>Number of Visits: <br><span class="visits"></span></h2>
+        <div class="join">
+            <h1 id="joinHead">☘️Join the Shamrock Chamber☘️</h1>
+            <section class="form" >
+                <form method="get" action="thankyou.html">
+                    <fieldset>
+                        <legend>Applicant Information</legend>
+                        <label>First Name* <input type="text" name="fname" required></label>
+                        <label>Last Name* <input type="text" name="lname" required></label>
+                        <label>Title <input type="text" name="title" pattern="[A-Za-z -]{7,}"></label>
+                        <label>Email* <input type="email" name="email" placeholder="name@gmail.com" required></label>
+                        <label>Phone Number* <input type="tel" name="phone" required></label>
+                        <label>Business Name* <input type="text" name="businessName" required></label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Membership Level</legend>
+                        <label><input type="radio" name="memLevel" value="non-profit"> Non-Profit Membership</label>
+                        <label><input type="radio" name="memLevel" value="bronze"> Bronze Membership</label>
+                        <label><input type="radio" name="memLevel" value="silver"> Silver Membership</label>
+                        <label><input type="radio" name="memLevel" value="gold"> Gold Membership</label>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Business Description</legend>
+                        <label"><textarea name="description"></textarea></label>
+                    </fieldset>
+                    <input type="hidden" name="date" value="">
+
+                    <input type="submit" value="Apply for Membership">
+                </form>
             </section>
-            <hr>
-            <section class="discover-imgs">
-                <figure>
-                    <img src="images/discover-images/lekki-free-trade.jpg" alt="Welcome to Dublin sign" loading="lazy" width="600"
-                        height="400">
-                    <figcaption>Lekki Free Zone </figcaption>
-                </figure>
-                <figure>
-                    <img src="images/discover-images/Lekki-Ikoyi-Link-bridge.webp" alt="Corn field" loading="lazy" width="600" height="400">
-                    <figcaption>Lekki-Ikoyi Link bridge</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/discover-images/beach.webp" alt="Ballantrae park bunnies" loading="lazy"
-                        width="600" height="400">
-                    <figcaption>Elegushi Beach</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/discover-images/national-museum.webp" alt="Bridge Park" loading="lazy" width="600"
-                        height="400">
-                    <figcaption>National Museum</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/discover-images/Hi-impact.webp" alt="Dublin Rec Center" loading="lazy" width="600"
-                        height="400">
-                    <figcaption>Hi-impact Park</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/discover-images/lekki-conservative.webp" alt="Columbus Zoo" loading="lazy" width="600" height="400">
-                    <figcaption>LCC</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/discover-images/freedompark.webp" alt="Columbus Zoo" loading="lazy" width="600" height="400">
-                    <figcaption>Freedom park</figcaption>
-                </figure>
-                
+
+            <section class="membershipInfo">
+                <h2>Membership Levels and Benefits</h2>
+
+                <h3>Non-Profit Membership - Free</h3>
+                <p>Receive all benefits the chamber has to offer at no cost.</p>
+
+                <h3>Bronze Membership - $150/Year</h3>
+                <p>Access to events and trainings hosted by the chamber.</p>
+
+                <h3>Silver Membership - $300/Year</h3>
+                <p>Receive the same benefits as Bronze members.</p>
+                <p>Receive event discounts and be advertised on home page.</p>
+
+                <h3>Gold Membership -$500/Year</h3>
+                <p>Receive the same benefits as Bronze and Silver members.</p>
+                <p>Eligible to host events and have access to VIP lounges</p>
             </section>
         </div>
     </main>
-    
     <footer>
-        <footer>
-            <section>
+        <section>
                 <img class="logo" src="images/logo.png" alt="EtiOsa Chamber of Commerce Logo">
                 <div>
                     <p>Eti-Osa Chamber of Commerce</p>
@@ -103,7 +100,7 @@
                 </div>
             </section>
             <section>
-                <p>info@dublinshamrocks.org</p>
+                <p>info@etiosashamrocks.org</p>
                 <p><a href="tel:18001234567">1-800-123-4567</a></p>
             </section>
             <section>
@@ -120,7 +117,8 @@
                 <p class="highlight">Last modified: <span id="lastModified"></span></p>
             </section>
 
-        </footer>
-    <script src="scripts/chamber.js"></script>
+    </footer>
+    <script src="scripts/chamber.js></script>
+    <script src="scripts/form.js></script>
 </body>
 </html>
