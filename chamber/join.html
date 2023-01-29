@@ -34,64 +34,83 @@
                 <li class="active"><a class="menu-items" href="discover.html">Discover</a></li>
                 <li><a class="menu-items" href="#">Directory</a></li>
                 <li><a class="menu-items" href="#">About</a></li>
-                <button class="join"><a href="#">Join Us</a></button>
+                <button class="join"><a href="join.html">Join Us</a></button>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="join">
-            <h1 id="joinHead">☘️Join the Shamrock Chamber☘️</h1>
-            <section class="form" >
-                <form method="get" action="thankyou.html">
-                    <fieldset>
-                        <legend>Applicant Information</legend>
-                        <label>First Name* <input type="text" name="fname" required></label>
-                        <label>Last Name* <input type="text" name="lname" required></label>
-                        <label>Title <input type="text" name="title" pattern="[A-Za-z -]{7,}"></label>
-                        <label>Email* <input type="email" name="email" placeholder="name@gmail.com" required></label>
-                        <label>Phone Number* <input type="tel" name="phone" required></label>
-                        <label>Business Name* <input type="text" name="businessName" required></label>
-                    </fieldset>
+        <h2 class="form-heading">Membership Form</h2><hr>
+    <div class="form">
+        
+        <div class="input-msg">
+          <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Member Information</legend>
+                    <label class="top">First Name:* <input type="text" name="fname" required></label>
+                    <label class="top">Last Name:* <input type="text" name="lname" required></label>
+                    <label class="top">Title: <input type="text" name="title" pattern="[A-Za-z -]{7,}"></label>
+                    <label class="top">Email* <input type="text" name="email" placeholder="someone@gmail.com" required></label>
+                    <label class="top">Cell Phone: <input type="tel" name="phone" placeholder="1235551234"></label>
+                    <label class="top">Company Name:* <input type="text" name="company"  required></label>
+                    <label class="top">Website <input type="url" name="url" placeholder="https://"></label>
 
-                    <fieldset>
-                        <legend>Membership Level</legend>
-                        <label><input type="radio" name="memLevel" value="non-profit"> Non-Profit Membership</label>
-                        <label><input type="radio" name="memLevel" value="bronze"> Bronze Membership</label>
-                        <label><input type="radio" name="memLevel" value="silver"> Silver Membership</label>
-                        <label><input type="radio" name="memLevel" value="gold"> Gold Membership</label>
-                    </fieldset>
-                    
-                    <fieldset>
-                        <legend>Business Description</legend>
-                        <label"><textarea name="description"></textarea></label>
-                    </fieldset>
-                    <input type="hidden" name="date" value="">
-
-                    <input type="submit" value="Apply for Membership">
-                </form>
-            </section>
-
-            <section class="membershipInfo">
-                <h2>Membership Levels and Benefits</h2>
-
-                <h3>Non-Profit Membership - Free</h3>
-                <p>Receive all benefits the chamber has to offer at no cost.</p>
-
-                <h3>Bronze Membership - $150/Year</h3>
-                <p>Access to events and trainings hosted by the chamber.</p>
-
-                <h3>Silver Membership - $300/Year</h3>
-                <p>Receive the same benefits as Bronze members.</p>
-                <p>Receive event discounts and be advertised on home page.</p>
-
-                <h3>Gold Membership -$500/Year</h3>
-                <p>Receive the same benefits as Bronze and Silver members.</p>
-                <p>Eligible to host events and have access to VIP lounges</p>
-            </section>
+                    <p> Memership Level Selection </p>
+                    <label class="sbs"> <input type="radio" name="mbrlevel" value="non-profit"> Non-profit Membership </label>
+                    <label class="sbs"> <input type="radio" name="mbrlevel" value="bronze"> Bronze Membership </label>
+                    <label class="sbs"> <input type="radio" name="mbrlevel" value="silver"> Silver Membership </label>
+                    <label class="sbs"> <input type="radio" name="mbrlevel" value="gold"> Gold Membership </label>
+                    <label for="comments" class="top">Brief information about company:<textarea id="comments" name="comments" required></textarea></label>
+                </fieldset>
+                   
+                <input type="submit" value="Become a Membership" class="submitBtn">
+            </form>
         </div>
+                <div class="output-msg">
+            
+                <fieldset>
+                <legend> Membership Details</legend>
+                <p><strong>Non-Profit Membership:</strong><br>
+                    Mebership Cost: Free <br>
+                    Renewal Fee: 5$ <br>
+                    Benefits: <br>
+                    NP members have access to Chamber directory. <br>
+                    Free particpaion in free events.
+                </p>
+
+                <p><strong>Bronze Membership:</strong><br>
+                    Mebership Cost: 50$ <br>
+                    Renewal Fee: 25$ <br>
+                    Benefits: <br> 
+                    Bronze members have 30% discount in local FAIR particiaption fee. <br>
+                    20% discount for paid events particiaption
+                </p>
+                <p><strong>Silver Membership:</strong><br>
+                    Mebership Cost: 150$ <br>
+                    Renewal Fee: 75$ <br>
+                    Benefits: <br> 
+                    Silver members have 50% discount in local FAIR particiaption fee. <br>
+                    40% discount for paid events particiaption. <br>
+                    40% disocunt for community club memberships. <br>
+                    Visa facilitation for internaional business tours.
+                </p>
+                <p><strong>Gold Membership:</strong><br>
+                    Mebership Cost: 300$ <br>
+                    Renewal Fee: 200$ <br>
+                    Benefits: <br> 
+                    Gold members have 90% discount in local FAIR particiaption fee. <br>
+                    80% discount for paid events particiaption. <br>
+                    80% disocunt for community club memberships. <br>
+                    Visa facilitation for internaional business tours and 20% on airline tickets. <br>
+                    Gold members will be displayed on chamber homepage randomly.
+                </p>
+                
+            
+                </fieldset>  
+        </div>
+    </div>
     </main>
     <footer>
-        <section>
+            <section>
                 <img class="logo" src="images/logo.png" alt="EtiOsa Chamber of Commerce Logo">
                 <div>
                     <p>Eti-Osa Chamber of Commerce</p>
@@ -116,9 +135,10 @@
                 <p>Oghenekome Igho | </p>
                 <p class="highlight">Last modified: <span id="lastModified"></span></p>
             </section>
-
     </footer>
-    <script src="scripts/chamber.js></script>
-    <script src="scripts/form.js></script>
+
+    
+    
+    <script src="scripts/chamber.js"></script>
 </body>
 </html>

@@ -192,107 +192,116 @@ footer a {
     border-radius: 5px;
     border: solid 1px #224b0c;
   }
-  #maps {
-    margin: 1rem;
-  }
+ /* join */
+ .form-heading{
+  margin-top: 60px;
+  margin-left: 70px;
+  margin-bottom: -2px;
+  text-align: left;
+}
+
+.form{
+  display: flex;
+  flex-direction: row;
+  column-gap: 50px;
+  margin: 0 70px;
+}
+
+form fieldset{
+  margin:0 0;
+  border: var(--field-bord-color);
+  border-radius: 10px;
+  padding: .5px 2%;
+ 
+}
+form legend{
+  color: var(--lgnd-color);
+  margin: 0 1rem;
+  padding: 0 .5rem;
+}
+.output-msg legend{
+color: var(--lgnd-color);
+  margin: 0 1rem;
+  padding: 0 .5rem;
   
-  /*Form*/
-  div#form section {
-    margin: 1rem;
-  }
-  form {
-    font-size: 16px;
-  }
+}
+form label.top, form div{
+  display: block;
+  padding-top: 1rem;
+  color: blue;
+  font-size: .85rem;
+}
+form label.top input, form label.top select, form label.top textarea{
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: .75rem;
+  color: #555;
+  width: 100%;
+  background-color: rgba(0,0,0,0.1);
+}
+
+.output-msg fieldset{
+  margin:0 0;
+  border: var(--field-bord-color);
+  border-radius: 10px;
+  padding: .5px 2%;
+  height: 90.6%;
+}
+
+
+
+form input.submitBtn{
+  border: none;
+  background-color: #9c2c13;
+  color: white;
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  margin: .75rem 0 2rem 2%;
+  width: 96%;
+  max-width: 96%;
+}
+form label.top input:required{
+  border-left: red solid 6px;
+}
+form label.top input:required:valid{
+  border-left: green solid 6px;
+}
+
+.input-msg{
+  width: 50%;
+}
+.output-msg{
+  width: 50%;
   
-  form label {
-    display: block;
-    margin: 0.5rem;
-  }
-  
-  form input {
-    display: block;
-    border: 1px solid gray;
-    border-radius: 5px;
-    padding: 0.75rem;
-    width: 90%;
-    max-width: 20rem;
-  }
-  
-  input:required:invalid {
-    border-left: red solid 6px;
-  }
-  input:required:valid {
-    border-left: green solid 6px;
-  }
-  form input#submitBtn {
-    margin: 0.5rem;
-    cursor: pointer;
-  }
-  
-  #rateLabel {
-    margin-bottom: 0;
-  }
-  
-  #r {
-    margin-left: 0.5rem;
-    padding: 0;
-  }
-  
-  .ratinglabels {
-    font-size: 0.75rem;
-    display: flex;
-    justify-content: space-around;
-    max-width: 20rem;
-    margin-left: 0.5rem;
-  }
-  
-  #rating {
-    color: rgba(38, 78, 109, 1);
-  }
-  
-  .ratevalue {
-    margin: 0;
-  }
-  
-  div#usernameMessage {
-    display: none;
-    background-color: red;
-    color: white;
-    padding: 0.25rem;
-    text-align: center;
-    margin-bottom: 0;
-    width: auto;
-  }
-  
-  #submitBtn {
-    max-width: 10rem;
-  }
-  
-  #form table {
-    width: 100%;
-    padding: 1rem;
-    border-collapse: collapse;
-    margin: 0 auto;
-  }
-  #form table caption {
-    padding: 0.5rem;
-    background-color: rgba(38, 78, 109, 1);
-    color: white;
-    border-radius: 8px 8px 0 0;
-  }
-  
-  #form th {
-    background-color: rgba(38, 78, 109, 0.6);
-    color: white;
-    padding: 0.5rem;
-  }
-  
-  #form td {
-    text-align: center;
-    padding: 0.5rem;
-    border: 1px solid gray;
-  }
-  
-  #form tbody tr td:nth-child(2) {
-    text-align: left;
-  }  
+}
+form label.sbs{
+  display: block;
+  padding: .75rem 0;
+  color: #555;
+}
+form label.sbs, input{
+margin-right: 10px;
+font-size: 0.8rem;
+}
+.input-msg p{
+color: blue;
+margin-bottom: -7px;
+font-size: 0.8rem;
+}
+
+.output-msg p{
+font-size: 16px;
+padding-top: 20px;
+}
+
+
+/*--------------thanks.html page*/
+.thanks, .thanks ~ p{
+margin-top: 50px;
+color: blue;
+text-align: center;
+}
+
