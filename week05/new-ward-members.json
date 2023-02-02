@@ -1,0 +1,18 @@
+{
+    "surname" : "Igho",
+    "moved-in" : "2021-03-20",
+    "number-of-people": 2,
+    "bishop-visited" : true,
+    "family-members": [
+        {
+            "name": "Sid",
+            "gender": "male",
+            "age": 30
+        },
+        {
+            "name": "Kome",
+            "gender": "female",
+            "age": 28
+        }
+    ]
+}
