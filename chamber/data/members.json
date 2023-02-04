@@ -1,0 +1,20 @@
+{
+    "members": [
+    {
+        "name" : "Floorkraft Limited",
+        "Address" : "Second floor, Floorkraft Building, KM 16, Lekki-Epe Expressway, Beside Eterna filling station, Agungi, Lekki, Lagos, Nigeria",
+        "Phone number": "+234-818-185-0038",
+        "website URL" : "https://floorkraftng.com/",
+        "image": "<img src='https://floorkraftng.com/wp-content/uploads/2018/11/logo.png'>",
+        "membership": "gold"
+    },
+    {
+        "name" : "Bukka Hut",
+        "Address" : "Bukkha Hospitality Limited Lagos Nigeria",
+        "Phone number": "+234-8-185-0038",
+        "website URL" : "https://www.bukkahut.com/",
+        "image": "<img src='https://bukkahut.com/image/catalog/BH%20logo-05%20(2).png>",
+        "membership": "gold"
+    },
+]
+    }
