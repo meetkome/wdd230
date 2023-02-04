@@ -80,7 +80,8 @@ const captionDesc = document.querySelector('#weatherDesc');
 const currentTemp = document.querySelector('#weatherTemp');
 
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=-26.1086&lon=28.2377&appid=976d369f22e50f43a6d7598bae4b1b9c&units=imperial'; 
+const url = 'https://api.openweathermap.org/data/2.5/weather?q=Lagos,566&appid=82eed2cbba4b15bb351f841f1e08d31a&units=imperial'; 
+
 
 async function apiFetch() {
     try {
