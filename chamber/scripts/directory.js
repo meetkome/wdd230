@@ -1,4 +1,4 @@
-const url = "./data/members.json";
+const url = "data/members.json";
 
 async function getMembers() {
     try {
@@ -18,44 +18,63 @@ async function getMembers() {
   getMembers();
 
 
-  const displayMembers(members) {
+  const displayMembers = (members) => {
+    const cards = document.querySelector("#members");
+    cards.innerHTML = "";
     members.forEach((member) => {
+
+        const card = document.createElement("section");
     
-        const cards = document.querySelector("#members");
-        
-        const name = document.createElement("h2");
+      
+        let name = document.createElement("h2");
         name.innerHTML = member.name;
 
-        const address = document.createElement("p");
+        let address = document.createElement("p");
         address.innerHTML = member.address;
 
-        
-        const logo = document.createElement("img");
+        let phone = document.createElement("p");
+        phone.innerHTML = member.phone;
+
+        let website = document.createElement("p");
+        website.innerHTML = `<a href="${member.website}" target="_blank">Website</a>`;
+
+        let logo = document.createElement("img");
         logo.setAttribute("src", member.logo);
         logo.setAttribute("alt", `${member.name} logo`);
         logo.setAttribute("loading", "lazy");
-        logo.setAttribute("width", "250");
-        logo.setAttribute("height", "250");
+        logo.setAttribute("width", "200");
+        logo.setAttribute("height", "200");
         
-        const website = document.createElement("p");
-        url.innerHTML = `<a href="${member.website}" target="_blank">Website</a>`;
-
-
-        const phone = document.createElement("p");
-        phone.innerHTML = member.phone;
+        let memberLevel = document.createElement("p");
+        memberLevel.innerHTML = member.membership;
         
-        const membership = document.createElement("p");
-        level.innerHTML = member.membershipLevel;
         
-        const card = document.createElement("section");
         card.appendChild(logo);
         card.appendChild(name);
         card.appendChild(address);
         card.appendChild(phone);
         card.appendChild(website);
-        card.appendChild(membership);
-        memberCards.appendChild(card);
+        card.appendChild(memberLevel);
+        cards.appendChild(card);
     });
 }
+
+//display in grid and list 
+const gridbtn = document.querySelector("#grid");
+const listbtn = document.querySelector("#list");
+const display = document.querySelector("div#members");
+
+gridbtn.addEventListener("click", showGrid);
+listbtn.addEventListener("click", showList);
+
+function showGrid() {
+  display.classList.add("grid");
+	display.classList.remove("list");
+}
+function showList() {
+	display.classList.add("list");
+	display.classList.remove("grid");
+}
+
 
   
