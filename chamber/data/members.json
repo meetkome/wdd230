@@ -2,19 +2,59 @@
     "members": [
     {
         "name" : "Floorkraft Limited",
-        "Address" : "Second floor, Floorkraft Building, KM 16, Lekki-Epe Expressway, Beside Eterna filling station, Agungi, Lekki, Lagos, Nigeria",
-        "Phone number": "+234-818-185-0038",
-        "website URL" : "https://floorkraftng.com/",
-        "image": "<img src='https://floorkraftng.com/wp-content/uploads/2018/11/logo.png'>",
+        "address" : "Second floor, Floorkraft Building, KM 16, Lekki-Epe Expressway, Beside Eterna filling station, Agungi, Lekki, Lagos, Nigeria",
+        "phone": "+234-818-185-0038",
+        "website" : "https://floorkraftng.com/",
+        "logo": "<img src='https://floorkraftng.com/wp-content/uploads/2018/11/logo.png'>",
         "membership": "gold"
     },
     {
         "name" : "Bukka Hut",
-        "Address" : "Bukkha Hospitality Limited Lagos Nigeria",
-        "Phone number": "+234-8-185-0038",
-        "website URL" : "https://www.bukkahut.com/",
-        "image": "<img src='https://bukkahut.com/image/catalog/BH%20logo-05%20(2).png>",
+        "address" : "Bukkha Hospitality Limited Lagos Nigeria",
+        "phone": "+234-8-185-0038",
+        "website" : "https://www.bukkahut.com/",
+        "logo": "<img src='https://bukkahut.com/image/catalog/BH%20logo-05%20(2).png>",
         "membership": "gold"
     },
-]
+    {
+        "name" : "Bukka Hut",
+        "address" : "Bukkha Hospitality Limited Lagos Nigeria",
+        "phone": "+234-8-185-0038",
+        "website" : "https://www.bukkahut.com/",
+        "logo": "<img src='https://bukkahut.com/image/catalog/BH%20logo-05%20(2).png>",
+        "membership": "gold"
+    },
+    {
+        "name" : "Bukka Hut",
+        "address" : "Bukkha Hospitality Limited Lagos Nigeria",
+        "phone": "+234-8-185-0038",
+        "website" : "https://www.bukkahut.com/",
+        "logo": "<img src='https://bukkahut.com/image/catalog/BH%20logo-05%20(2).png>",
+        "membership": "gold"
+    },
+    {
+        "name" : "Bukka Hut",
+        "address" : "Bukkha Hospitality Limited Lagos Nigeria",
+        "phone": "+234-8-185-0038",
+        "website" : "https://www.bukkahut.com/",
+        "logo": "<img src='https://bukkahut.com/image/catalog/BH%20logo-05%20(2).png>",
+        "membership": "gold"
+    },
+    {
+        "name" : "Bukka Hut",
+        "address" : "Bukkha Hospitality Limited Lagos Nigeria",
+        "phone": "+234-8-185-0038",
+        "website" : "https://www.bukkahut.com/",
+        "logo": "<img src='https://bukkahut.com/image/catalog/BH%20logo-05%20(2).png>",
+        "membership": "gold"
+    },
+    {
+        "name" : "Side Walk and Bar",
+        "address" : "23 Sanusi Fafunwa street, Victoria Island, Lagos",
+        "phone": "+234 705 244 9020",
+        "website" : "https://ofadaa.com/lagos/restaurants/sidewalk-vi",
+        "logo": "<https://files.ofadaa.com/uploads/restaurant_cover_image/file/3792/header_SideWalk-Victoria-Island.jpg>",
+        "membership": "gold"
     }
+    ]
+}
