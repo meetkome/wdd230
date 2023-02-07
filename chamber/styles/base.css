@@ -298,10 +298,77 @@ padding-top: 20px;
 }
 
 
-/*--------------thanks.html page*/
+/*thanks.html page*/
 .thanks, .thanks ~ p{
 margin-top: 50px;
 color: blue;
 text-align: center;
 }
 
+
+/* for directory */
+h1.directory{
+  text-align: center;
+  margin-bottom: 1rem;
+  border-bottom: solid 2px #224b0c;
+}
+
+div.menu {
+  text-align: center;
+}
+
+div.menu button {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: solid 1px #224b0c;
+}
+div#members a {
+  color: black;
+}
+
+/*Grid*/
+div.grid {
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 0.5rem;
+  margin: 1rem auto;
+}
+
+div.grid section {
+  text-align: center;
+  margin: 0.5rem;
+  border: solid 1px #224b0c;
+  border-radius: 5px;
+}
+
+div.grid-card img {
+  max-width: 100%;
+  margin: 0.5rem;
+}
+div.grid-card h3,
+div.grid-card p {
+  margin: 0.2rem 0;
+}
+
+/*List*/
+div.list {
+  max-width: 1000px;
+  margin: 1rem auto;
+}
+div.list section {
+  display: grid;
+  grid-template-columns: 60px repeat(5, auto);
+  text-align: center;
+  margin: 0.5rem 2rem;
+  border: solid 1px #224b0c;
+  border-radius: 5px;
+  overflow: hidden;
+  align-items: center;
+}
+div.list img {
+  width: 50px;
+  height: auto;
+  justify-self: center;
+}
