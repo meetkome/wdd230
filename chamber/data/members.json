@@ -13,7 +13,7 @@
         "address" : "52a Kofo Abayomi St, Victoria Island 101241, Lagos",
         "phone": "01 236 6666",
         "website" : "https://thelagoscontinental.com/",
-        "logo": "<https://sp-ao.shortpixel.ai/client/to_auto,q_lossless,ret_img,w_300/https://thelagoscontinental.com/wp-content/uploads/2020/08/logo-Main-300x280.png",
+        "logo": "<https://thelagoscontinental.com/wp-content/uploads/2020/08/logo-Main-300x280.png",
         "membership": "gold"
     },
     {
@@ -22,7 +22,7 @@
         "phone": "+234-8-185-0038",
         "website" : "https://www.coolfm.ng/lagos/",
         "logo": "<https://mmo.aiircdn.com/370/5e4fd2d4b9baa.svg>",
-        "membership": "gold"
+        "membership": "Non-Profit"
     },
     {
         "name" : "Arise Tv",
@@ -30,13 +30,13 @@
         "phone": "+000-8-185-0038",
         "website" : "hhttps://www.arise.tv/",
         "logo": "<img src='https://www.arise.tv/wp-content/uploads/2022/11/arise-news-logo-lg.png>",
-        "membership": "gold"
+        "membership": "Silver"
     },
     {
-        "name" : "Bukka Hut",
-        "address" : "Bukkha Hospitality Limited Lagos Nigeria",
-        "phone": "+234-8-185-0038",
-        "website" : "https://www.bukkahut.com/",
+        "name" : "Lekki Conservation Center",
+        "address" : "Lekki-Epe Express Way Lagos",
+        "phone": "+000-8-185-0000",
+        "website" : "http://www.ncfnigeria.org/projects/lekki-conservation-centre",
         "logo": "<img src='https://bukkahut.com/image/catalog/BH%20logo-05%20(2).png>",
         "membership": "gold"
     },
@@ -45,8 +45,8 @@
         "address" : "Bukkha Hospitality Limited Lagos Nigeria",
         "phone": "+234-8-185-0038",
         "website" : "https://www.bukkahut.com/",
-        "logo": "<img src='https://bukkahut.com/image/catalog/BH%20logo-05%20(2).png>",
-        "membership": "gold"
+        "logo": "<http://www.ncfnigeria.org/assets/images/brands/logo.png>",
+        "membership": "Bronze"
     },
     {
         "name" : "Side Walk and Bar",

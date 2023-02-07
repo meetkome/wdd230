@@ -343,12 +343,13 @@ div.grid section {
   border-radius: 5px;
 }
 
-div.grid-card img {
+div.grid img {
   max-width: 100%;
   margin: 0.5rem;
 }
-div.grid-card h3,
-div.grid-card p {
+div.grid h3,
+div.grid
+p {
   margin: 0.2rem 0;
 }
 
