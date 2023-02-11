@@ -1,9 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&family=Dancing+Script&family=Open+Sans:wght@300&display=swap')
+/* @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&family=Dancing+Script&family=Open+Sans:wght@300&display=swap') */
 
-* {
-    margin: 0;
-    padding: 0;
-  }
   
   body {
     font-family: "Open Sans", Arial, Helvetica;
@@ -198,7 +194,7 @@ section h3 {
 
 
 /*---------- Form -----------*/
-div#form section {
+form {
   margin: 1rem;
 }
 form {

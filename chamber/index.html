@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webpage design</title>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
     <title>Eti-Osa Chamber of Commerce Home page</title>
     <meta name="description"
@@ -34,10 +33,22 @@
                 <li class="active"><a class="menu-items" href="discover.html">Discover</a></li>
                 <li><a class="menu-items" href="directory.html">Directory</a></li>
                 <li><a class="menu-items" href="#">About</a></li>
-                <button class="join"><a href="join.html">Join Us</a></button>
+                <li><button class="join">Join Us</button></li>
             </ul>
         </nav>
     </header>
+    <div class="banner">
+        <div class="bannerContent">
+            <div class="bannerText">
+                <strong>Reminder To All Member:</strong> Meet and greet on Wednesday at 7:00 p.m.
+            </div>
+            <button class="bannerClose" type="button"></button>
+                <span class="material-icons">
+                    close
+                </span>
+        </div> 
+    </div>
+    <!-- <p id="banner">Meet and greet on Wednesday at 7:00 p.m.</p> -->
     <main class="home-grid">
         <div class="cards">
                 <section class="news">
@@ -45,16 +56,14 @@
                     <p class="par">Onyeka, the Director, Transparent Protection Ltd. (TPL)/Gte, a Non-Governmental Organisation (NGO), said that the review would <br>
                         help curb fake insurance and facilitate claims payment... </p>
             </section>
-            <section class="contact">
-                <button class="jn"><a href="#">Contact</a></button> 
-                <button class="discover"><a href="#">Discover +</a></button>
-
-                </span> 
-            </section>
+            <div class="contact">
+                <button class="jn">Contact</button> 
+                <button class="discover">Discover +</button>
+            </div>
                     
-            <section class="hero-card">
+            <div class="hero-card">
                     <img class="hero-img" src="images/Lekki-Ikoyi-Link-bridge.webp" alt="Image of lagos" >
-            </section>
+            </div>
             <section class="weather-card">
                     <h4>Weather</h4>
                     <p>Current Temperature in Lagos: <span id="weatherTemp"></span></p>
@@ -109,5 +118,6 @@
     
     <script src="scripts/chamber.js"></script>
     <script src="scripts/directory.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 </html>

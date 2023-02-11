@@ -4,8 +4,7 @@ const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
 // Declare a const variable name "url" and assign it a valid URL string as given in the documentation.
-
-const url = 'https://api.openweathermap.org/data/2.5/weather?q=Trier,276&appid=82eed2cbba4b15bb351f841f1e08d31a&units=imperial';
+const weatherurl = 'https://api.openweathermap.org/data/2.5/weather?q=Trier,566&appid=82eed2cbba4b15bb351f841f1e08d31a&units=imperial'; ';
 
 // Remember to invoke the apiFetch() function with a call somewhere in your script
 // Store the results of the url fetch into a variable named "response".
@@ -15,7 +14,7 @@ const url = 'https://api.openweathermap.org/data/2.5/weather?q=Trier,276&appid=8
 // Finish off the catch block by outputting any try error to the console.
 async function apiFetch() {
     try {
-      const response = await fetch(url);
+      const response = await fetch(weatherurl);
       if (response.ok) {
         const data = await response.json();
         console.log(data); // testing only

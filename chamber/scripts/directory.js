@@ -43,6 +43,8 @@ async function getMembers() {
       logo.setAttribute("loading", "lazy");
       logo.setAttribute("width", "200");
       logo.setAttribute("height", "200");
+
+
       
       const memberLevel = document.createElement("p");
       memberLevel.innerHTML = member.membership;

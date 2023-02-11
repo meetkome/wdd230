@@ -3,7 +3,7 @@
     margin: 0 auto;
 } */
 body {
-    background: linear-gradient(to top, #fcfcfb , #b1e99f, #fde33b, #fcfcfb 90%), url(1.jpg);
+    background: linear-gradient(to top, #fcfcfb , #b1e99f, #fde33b, #fcfcfb 90%);
     font-family: 'Open Sans', 'Benas Neue';
 }
 
@@ -101,7 +101,7 @@ nav ul li.active {
     width: 100px;
     float: right;
     /* display: flex; */
-    flex-direction: right;
+    flex-direction: row;
     margin-left: 500px;
     background: black;
     height: 30px;
@@ -159,7 +159,7 @@ footer a {
 }
 
 
-/* DISCOVER */
+/* CSS for DISCOVER */
   div.discover {
     background-color: #b1e99f;
     display: flex;
@@ -192,7 +192,7 @@ footer a {
     border-radius: 5px;
     border: solid 1px #224b0c;
   }
- /* join */
+ /* CSS for join */
  .form-heading{
   margin-top: 60px;
   margin-left: 70px;
@@ -205,6 +205,8 @@ footer a {
   flex-direction: row;
   column-gap: 50px;
   margin: 0 70px;
+  color: black;
+
 }
 
 form fieldset{
@@ -287,7 +289,7 @@ margin-right: 10px;
 font-size: 0.8rem;
 }
 .input-msg p{
-color: blue;
+color: rgb(23, 59, 39);
 margin-bottom: -7px;
 font-size: 0.8rem;
 }
@@ -301,12 +303,12 @@ padding-top: 20px;
 /*thanks.html page*/
 .thanks, .thanks ~ p{
 margin-top: 50px;
-color: blue;
+color: rgb(23, 59, 39);
 text-align: center;
 }
 
 
-/* for directory */
+/* CSS for directory */
 h1.directory{
   text-align: center;
   margin-bottom: 1rem;
@@ -341,6 +343,7 @@ div.grid section {
   margin: 0.5rem;
   border: solid 1px #224b0c;
   border-radius: 5px;
+  background-color: #fcfcfb;
 }
 
 div.grid img {
@@ -373,3 +376,33 @@ div.list img {
   height: auto;
   justify-self: center;
 }
+
+/* BANNER */
+.banner {
+  background:none;
+}
+.bannerContent {
+  padding: 16px;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.bannerText {
+  flex-grow: 1;
+  line-height: 1.4;
+  font-family: 'Quicksand', Open-sans;
+  font-size: 18px;
+}
+
+.bannerClose {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.bannerText,
+.bannerClose > span {
+  color: black;
+}
+

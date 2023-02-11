@@ -1,43 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webpage design</title>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
-    <title>Eti-Osa Chamber of Commerce Home page</title>
-    <meta name="description"
-    content="Chamber of Commerce Website Home Page for WDD 230 class at BYU-Idaho">
-    <meta name="author" content="Oghenekome Igho">
-    <meta property="og:title" content="WDD230 - Chamber of Commerce - Oghenekome Igho">
-    <meta property="og:url" content="http://meetkome.github/io/wdd230/">
-    <meta property="og:type" content="website">
-    <meta property="og:description" content="Eti-Osa Chamber of Commerce Home Page - WDD 230 - Oghenekome Igho">
-    <meta property="og:image" content="https://images.app.goo.gl/ezPyra7S52Cxfwsv8">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
-    <link rel="icon" href="images/favicon.ico">
-</head>
-<body>
-    <header>
-        <img class="logo" src="images/logo.png" alt="Eti-Osa Chamber of Commerce Logo">
-        <div>
-            <h1 class="name">EtiOsa</h1>
-            <p class="chamber">Chamber of Commerce</p>
-        </div>
-        <nav>
-            <button id="menu-button"></button>
-            <ul>
-                <!-- <li><a id="menu-button" href="#"></a></li> -->
-                <li><a class="menu-items" href="index.html">Home</a></li>
-                <li class="active"><a class="menu-items" href="discover.html">Discover</a></li>
-                <li><a class="menu-items" href="#">Directory</a></li>
-                <li><a class="menu-items" href="#">About</a></li>
-                <button class="join"><a href="join.html">Join Us</a></button>
-            </ul>
-        </nav>
-    </header>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
+        <title>Eti-Osa Chamber of Commerce Home page</title>
+        <meta name="description"
+        content="Chamber of Commerce Website Home Page for WDD 230 class at BYU-Idaho">
+        <meta name="author" content="Oghenekome Igho">
+        <meta property="og:title" content="WDD230 - Chamber of Commerce - Oghenekome Igho">
+        <meta property="og:url" content="http://meetkome.github/io/wdd230/">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="Eti-Osa Chamber of Commerce Home Page - WDD 230 - Oghenekome Igho">
+        <meta property="og:image" content="https://images.app.goo.gl/ezPyra7S52Cxfwsv8">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <link rel="icon" href="images/favicon.ico">
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="images/logo.png" alt="Eti-Osa Chamber of Commerce Logo">
+            <div>
+                <h1 class="name">EtiOsa</h1>
+                <p class="chamber">Chamber of Commerce</p>
+            </div>
+            <nav>
+                <button id="menu-button"></button>
+                <ul>
+                    <!-- <li><a id="menu-button" href="#"></a></li> -->
+                    <li><a class="menu-items" href="index.html">Home</a></li>
+                    <li class="active"><a class="menu-items" href="discover.html">Discover</a></li>
+                    <li><a class="menu-items" href="directory.html">Directory</a></li>
+                    <li><a class="menu-items" href="#">About</a></li>
+                    <!-- <li><button class="join">Join Us</button></li> -->
+                </ul>
+                <li><button class="join">Join Us</button></li>
+            </nav>
+        </header>
     <main>
         <h2 class="form-heading">Membership Form</h2><hr>
     <div class="form">
@@ -50,7 +53,7 @@
                     <label class="top">Last Name:* <input type="text" name="lname" required></label>
                     <label class="top">Title: <input type="text" name="title" pattern="[A-Za-z -]{7,}"></label>
                     <label class="top">Email* <input type="text" name="email" placeholder="someone@gmail.com" required></label>
-                    <label class="top">Cell Phone: <input type="tel" name="phone" placeholder="1235551234"></label>
+                    <label class="top">Phone Number: <input type="tel" name="phone" placeholder="1235551234"></label>
                     <label class="top">Company Name:* <input type="text" name="company"  required></label>
                     <label class="top">Website <input type="url" name="url" placeholder="https://"></label>
 

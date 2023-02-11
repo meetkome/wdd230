@@ -18,7 +18,8 @@ const displayVisits = document.querySelector(".visits");
 let numVisits = Number(window.localStorage.getItem("visits-ls"));
 // determine if this is the first visit or display the number of visits.
 if (numVisits !== 0) {
-  displayVisits.textContent = numVisits;
+    numVisits.valueOf = Number(window.localStorage.getItem("visits-ls"));
+//   displayVisits.textContent = numVisits; ---------- Actual one
 } else {
   displayVisits.textContent = "It's your first visit!";
 }
