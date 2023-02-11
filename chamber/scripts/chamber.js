@@ -61,3 +61,23 @@ function displayResults(data) {
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = desc;
 }
+
+function displayForecastWeather(data) {
+    // console.log(data);
+    const highs = document.querySelector("#forecastHigh");
+    const lows = document.querySelector("#forecastLow");
+  
+    for (let i = 0; i < 3; i++) {
+      // console.table(data.daily[i]);
+      const dayHigh = document.createElement("li");
+      const dayLow = document.createElement("li");
+  
+      dayHigh.innerHTML = `${data.list[i].main.temp_max}&deg;F`;
+      // console.log(dayHigh);
+      dayLow.innerHTML = `${data.list[i].main.temp_min}&deg;F`;
+      // console.log(dayLow);
+  
+      highs.appendChild(dayHigh);
+      lows.appendChild(dayLow);
+    }
+  }
