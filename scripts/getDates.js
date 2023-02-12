@@ -113,7 +113,7 @@ function displayResults(data) {
 const ActivitiesElement = document.querySelector("#activities");
 // const githubLink = "https://izakhearn.github.io/WDD230/";
 const githubLink = "https://meetkome.github.io/WDD230/";
-const JsonLink = githubLink + "links.json";
+const JsonLink = githubLink + "dynamic-links.json";
 
 async function getLinks() {
     const response = await fetch(JsonLink);
@@ -128,9 +128,9 @@ function displayLinks(data,keys) {
         li.textContent = key + ": ";
         data[key].forEach(link => {
             const a = document.createElement("a");
-            a.setAttribute("href", link.link);
+            a.setAttribute("href", link.url);
             a.setAttribute("target", "_blank");
-            a.textContent = link.name + " | ";
+            a.textContent = link.title + " | ";
             li.appendChild(a);
         });
         ActivitiesElement.appendChild(li);
