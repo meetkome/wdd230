@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
-        <title>Eti-Osa Chamber of Commerce Home page</title>
-        <meta name="description"
-        content="Chamber of Commerce Website Home Page for WDD 230 class at BYU-Idaho">
-        <meta name="author" content="Oghenekome Igho">
-        <meta property="og:title" content="WDD230 - Chamber of Commerce - Oghenekome Igho">
-        <meta property="og:url" content="http://meetkome.github/io/wdd230/">
-        <meta property="og:type" content="website">
-        <meta property="og:description" content="Eti-Osa Chamber of Commerce Home Page - WDD 230 - Oghenekome Igho">
-        <meta property="og:image" content="https://images.app.goo.gl/ezPyra7S52Cxfwsv8">
-        <link rel="stylesheet" href="styles/base.css">
-        <link rel="stylesheet" href="styles/larger.css">
-        <link rel="icon" href="images/favicon.ico">
-    </head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eti-Osa Chamber of Commerce Home page</title>
+    <meta name="description"
+    content="Chamber of Commerce Website Home Page for WDD 230 class at BYU-Idaho">
+    <meta name="author" content="Oghenekome Igho">
+    <meta property="og:title" content="WDD230 - Chamber of Commerce - Oghenekome Igho">
+    <meta property="og:url" content="http://meetkome.github/io/wdd230/">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Eti-Osa Chamber of Commerce Home Page - WDD 230 - Oghenekome Igho">
+    <meta property="og:image" content="https://images.app.goo.gl/ezPyra7S52Cxfwsv8">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
     <body>
         <header>
             <img class="logo" src="images/logo.png" alt="Eti-Osa Chamber of Commerce Logo">
@@ -36,9 +34,8 @@
                     <li class="active"><a class="menu-items" href="discover.html">Discover</a></li>
                     <li><a class="menu-items" href="directory.html">Directory</a></li>
                     <li><a class="menu-items" href="#">About</a></li>
-                    <!-- <li><button class="join">Join Us</button></li> -->
+                    <li><button type="button" onclick="location.href='join.html'" class="join">Join Us</button></li>
                 </ul>
-                <li><button class="join">Join Us</button></li>
             </nav>
         </header>
     <main>
@@ -113,37 +110,38 @@
     </div>
     </main>
     <footer>
-            <section>
-                <img class="logo" src="images/logo.png" alt="EtiOsa Chamber of Commerce Logo">
-                <div>
-                    <p>Eti-Osa Chamber of Commerce</p>
-                    <p>Happy Homes Estate</p>
-                    <p>Lagos State</p>
-                </div>
-            </section>
-            <section>
-                <p>info@etiosashamrocks.org</p>
-                <p><a href="tel:18001234567">1-800-123-4567</a></p>
-            </section>
-            <section>
-                <div class="icon">
-                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-                </div>
-            </section>
-            <section>
-                <p>&copy;2023 Eti-Osa Chamber of Commerce | </p>
-                <p>WDD 230 | BYU-Idaho | </p>
-                <p>Oghenekome Igho | </p>
-                <p class="highlight">Last modified: <span id="lastModified"></span></p>
-            </section>
+        <div>
+            <img class="logo" src="images/logo.png" alt="EtiOsa Chamber of Commerce Logo">
+            <div>
+                <p>Eti-Osa Chamber of Commerce</p>
+                <p>Happy Homes Estate</p>
+                <p>Lagos State</p>
+            </div>
+        </div>
+        <div>
+            <p>info@etiosashamrocks.org</p>
+            <p><a href="tel:18001234567">1-800-123-4567</a></p>
+        </div>
+        <div>
+            <div class="icon">
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            </div>
+        </div>
+        <div>
+            <p>&copy;2023 Eti-Osa Chamber of Commerce | </p>
+            <p>WDD 230 | BYU-Idaho | </p>
+            <p>Oghenekome Igho | </p>
+            <p class="highlight">Last modified: <span id="lastModified"></span></p>
+        </div>
     </footer>
 
     
-    
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>   
     <script src="scripts/chamber.js"></script>
-    <script src="scripts/forms.js"></script>
-    <script src="scripts/directory.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/spotlight.js"></script>
 </body>
 </html>

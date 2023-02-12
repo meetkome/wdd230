@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
     <title>Eti-Osa Chamber of Commerce Home page</title>
     <meta name="description"
     content="Chamber of Commerce Website Home Page for WDD 230 class at BYU-Idaho">
@@ -14,6 +13,8 @@
     <meta property="og:type" content="website">
     <meta property="og:description" content="Eti-Osa Chamber of Commerce Home Page - WDD 230 - Oghenekome Igho">
     <meta property="og:image" content="https://images.app.goo.gl/ezPyra7S52Cxfwsv8">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="images/favicon.ico">
@@ -33,26 +34,20 @@
                 <li class="active"><a class="menu-items" href="discover.html">Discover</a></li>
                 <li><a class="menu-items" href="directory.html">Directory</a></li>
                 <li><a class="menu-items" href="#">About</a></li>
-                <li><button class="join">Join Us</button></li>
+                <li><button type="button" onclick="location.href='join.html'" class="join">Join Us</button></li>
             </ul>
         </nav>
     </header>
-    <div class="banner">
-        <div class="bannerContent">
-            <div class="bannerText">
-                <strong>Reminder To All Member:</strong> Meet and greet on Wednesday at 7:00 p.m.
-            </div>
-            <button class="bannerClose" type="button"></button>
-                <span class="material-icons">
-                    close
-                </span>
-        </div> 
-    </div>
-    <!-- <p id="banner">Meet and greet on Wednesday at 7:00 p.m.</p> -->
+
+    <p id="banner"><strong>Meet and greet on Wednesday at 7:00 p.m.</strong>  <button class="bannerClose" type="button"></button>
+        <span class="material-icons">
+            close
+        </span></p>
+   
     <main class="home-grid">
         <div class="cards">
                 <section class="news">
-                    <h1>Today's News</h1>
+                    <h2>Today's News</h2>
                     <p class="par">Onyeka, the Director, Transparent Protection Ltd. (TPL)/Gte, a Non-Governmental Organisation (NGO), said that the review would <br>
                         help curb fake insurance and facilitate claims payment... </p>
             </section>
@@ -67,79 +62,56 @@
             <section class="weather-card">
                     <h3>Current Weather</h3>
                     <p> <span id="weatherTemp"></span></p>
-                    <img id="weatherIcon">
+                    <img src="data:," alt="weather icon" id="weatherIcon">
                     <p>Experiencing: <span  id="weatherDesc"></span></p>
                     <h3>Three Days Forecast</h3>
-                    <ol id="forecastHigh">
+                    <ol class="forecast" id="forecastHigh">
                         <li>Highs</li>
                     </ol>
-                    <ol id="forecastLow">
+                    <ol class="forecast" id="forecastLow">
                         <li>Lows</li>
                     </ol>
 
-                <!-- <p>Current Weather: <br>
-                    <span id="current-temp"></span> with <span id="weatherDesc"></span>
-                </p>
-                <img id="weather-icon" src="data:," alt="weather icon">
-
-                <section class="forecast">
-                    <h3>Three Day Forecast</h3>
-                    <ol id="forecastHigh">
-                        <li>Highs</li>
-                    </ol>
-                    <ol id="forecastLow">
-                        <li>Lows</li>
-                    </ol> -->
             </section>
-            <div id="members" class="grid"></div>
-            <section class="company" id="company1">
-                <h2>Company1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-            </section>
-            <section class="company" id="company2">
-                <h2>Company2</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-            </section>
-            <section class="company" id="company3">
-                <h2>Company3</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-            </section> 
+            
+                
         </div>
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>    
+        <div id="spotlight-banner"><h2>Spotlight</h2></div>
     </main>
     
     <footer>
-        <section>
+        <div>
             <img class="logo" src="images/logo.png" alt="EtiOsa Chamber of Commerce Logo">
             <div>
                 <p>Eti-Osa Chamber of Commerce</p>
                 <p>Happy Homes Estate</p>
                 <p>Lagos State</p>
             </div>
-        </section>
-        <section>
+        </div>
+        <div>
             <p>info@etiosashamrocks.org</p>
             <p><a href="tel:18001234567">1-800-123-4567</a></p>
-        </section>
-        <section>
+        </div>
+        <div>
             <div class="icon">
                 <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
                 <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
                 <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
             </div>
-        </section>
-        <section>
+        </div>
+        <div>
             <p>&copy;2023 Eti-Osa Chamber of Commerce | </p>
             <p>WDD 230 | BYU-Idaho | </p>
             <p>Oghenekome Igho | </p>
             <p class="highlight">Last modified: <span id="lastModified"></span></p>
-        </section>
+        </div>
     </footer>
 
     
-    
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>   
     <script src="scripts/chamber.js"></script>
-    <script src="scripts/directory.js"></script>
+    <script src="scripts/weather.js"></script>
     <script src="scripts/banner.js"></script>
+    <script src="scripts/spotlight.js"></script>
 </body>
 </html>
