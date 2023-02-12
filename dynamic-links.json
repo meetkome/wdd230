@@ -1,16 +1,99 @@
 {
-    "weeks": [
+  "weeks": [
+    {
+      "week": "Week 1",
+      "links": [
+        {
+          "url":"https://meetkome.github.io/wdd230/week01/holygrail.html",
+          "title":"The Holy Grail Layout"
+        },
+        {
+          "url":"https://meetkome.github.io/wdd230/week01/media-query.html",
+          "title":"Media Queries"
+        },
+        {
+          "url":"https://meetkome.github.io/wdd230/week01/chamber-site-plan",
+          "title":"Chamber Site-plan"
+        }
+      ]
+    },
+    {
+      "week": "Week 2",
+      "links": [
+        {
+          "url":"https://meetkome.github.io/wdd230/week02/design.html",
+          "title":"Design"
+        },
+        {
+          "url":"https://codepen.io/meetkome/pen/dyjWgEK",
+          "title":"Responsive Menu"
+        },
+        {
+          "url":"https://meetkome.github.io/wdd230/week02/bom.html",
+          "title":"BOM"
+        }
+
+      ]
+    },
+    {
+    "week": "Week 3",
+    "links": [
       {
-        "week": "Week 1",
-        "links": [
-          {
-            "url":"week01/holygrail.html",
-            "title":"The Holy Grail Layout"
-          },
-          {
-            "url":"week01/media-query.html",
-            "title":"Media Queries"
-          }
-        ]
+        "url":"week03/images/landscape.webp",
+        "title":"Webp"
       },
-    
+      {
+        "url":"week03/lazyload.html",
+        "title":"Lazy Loading"
+      },
+      {
+        "url":"https://codepen.io/meetkome/pen/jOpaOLj",
+        "title":"Responsive Images"
+      },
+      {
+        "url":"https://meetkome.github.io/wdd230/week03/bom2.html",
+        "title":"BOM local storage"
+      }
+    ]
+  },
+  {
+    "week": "Week 4",
+    "links": [
+      {
+        "url":"https://codepen.io/meetkome/pen/vYajxmm",
+        "title":"Pseudo Class"
+      },
+      {
+        "url":"images/w3school-excercise.webp",
+        "title":"Combinator"
+      },
+      {
+        "url":"week04/form-start/index.html",
+        "title":"Forms"
+      }
+    ]
+  },
+  {
+  "week": "Week 5",
+  "links": [
+    {
+      "url":"https://codepen.io/meetkome/pen/RwBEYbM",
+      "title":"css Pseudo Element"
+    },
+    {
+      "url":"week05/new-ward-members.json",
+      "title":"New Members"
+    },
+    {
+      "url":"week05/prophets.html",
+      "title":"Prophets API"
+    },
+    {
+      "url":"week05/weather.html",
+      "title":"Weather API"
+    }
+  ]
+}
+]
+}
+
