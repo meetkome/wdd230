@@ -111,8 +111,9 @@ function displayResults(data) {
 
 // JSON Dynamic Links 
 const ActivitiesElement = document.querySelector("#activities");
-const githubLink = "https://meetkome.github.io/wdd230/";
-const JsonLink = githubLink + "dynamic-links.json";
+// const githubLink = "https://izakhearn.github.io/WDD230/";
+const githubLink = "https://meetkome.github.io/WDD230/";
+const JsonLink = githubLink + "links.json";
 
 async function getLinks() {
     const response = await fetch(JsonLink);
