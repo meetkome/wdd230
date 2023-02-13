@@ -80,12 +80,12 @@ const captionDesc = document.querySelector('#weatherDesc');
 const currentTemp = document.querySelector('#weatherTemp');
 
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?q=Lagos,566&appid=82eed2cbba4b15bb351f841f1e08d31a&units=imperial'; 
+const urlW = 'https://api.openweathermap.org/data/2.5/weather?q=Lagos,566&appid=82eed2cbba4b15bb351f841f1e08d31a&units=imperial'; 
 
 
 async function apiFetch() {
     try {
-        const response = await fetch(url);
+        const response = await fetch(urlW);
         if (response.ok) {
             const data = await response.json();
             displayResults(data);
@@ -109,76 +109,37 @@ function displayResults(data) {
 }
 
 
+
+
 // JSON Dynamic Links 
-const ActivitiesElement = document.querySelector("#activities");
-// const githubLink = "https://izakhearn.github.io/WDD230/";
-const githubLink = "https://meetkome.github.io/WDD230/";
-const JsonLink = githubLink + "dynamic-links.json";
 
-async function getLinks() {
-    const response = await fetch(JsonLink);
-    const data = await response.json();
-    keys= Object.keys(data);
-    displayLinks(data,keys);
+const linkUrl = "dynamic-links.json";
+
+async function getWeeksLinks() {
+  try {
+    const response = await fetch(linkUrl);
+    if (response.ok) {
+      const data = await response.json();
+      console.log(data.weeks);
+      displayActivities(data.weeks);
+    } else {
+      throw Error(await response.text());
+    }
+  } catch (error) {
+    console.log(error);
+  }
 }
 
-function displayLinks(data,keys) {
-    keys.forEach(key => {
-        const li = document.createElement("li");
-        li.textContent = key + ": ";
-        data[key].forEach(link => {
-            const a = document.createElement("a");
-            a.setAttribute("href", link.url);
-            a.setAttribute("target", "_blank");
-            a.textContent = link.title + " | ";
-            li.appendChild(a);
-        });
-        ActivitiesElement.appendChild(li);
-    });
+getWeeksLinks();
+
+function displayActivities(weeks) {
+  weeks.forEach((week) => {
+    const list = document.querySelector(".weeklink");
+    const item = document.createElement("li");
+    const weekNumber = week.week;
+    const title1 = week.links[0].title;
+    const url1 = week.links[0].url;
+    item.innerHTML = `${weekNumber}: <a href="${url1}">${title1}</a> `;
+    list.appendChild(item);
+  })
 }
-
-getLinks();
-
-
-
-// const linkUrl = "dynamic-links.json";
-
-// async function getWeeksActivities() {
-//   try {
-//     const response = await fetch(linkUrl);
-//     if (response.ok) {
-//       const data = await response.json();
-//       console.log(data.weeks);
-//       displayActivities(data.weeks);
-//     } else {
-//       throw Error(await response.text());
-//     }
-//   } catch (error) {
-//     console.log(error);
-//   }
-// }
-
-// getWeeksActivities();
-
-// function displayActivities(weeks) {
-//   weeks.forEach((week) => {
-//     const list = document.querySelector(".weeks");
-//     const activities = document.createElement("li");
-//     const weekNum = week.week;
-//     const title1 = week.links[0].title;
-//     const url1 = week.links[0].url;
-//     const title2 = week.links[1].title;
-//     const url2 = week.links[1].url;
-//     const title3 = week.links[2].title;
-//     const url3 = week.links[2].url;
-//     const title4 = week.links[3].title;
-//     const url4 = week.links[3].url;
-  
-//     if (title4 == "" && url4 == "") {
-//       activities.innerHTML = `${weekNum}: <a href="${url1}">${title1}</a> | <a href="${url2}">${title2}</a> | <a href="${url3}">${title3}</a>`;
-//     } else {
-//       activities.innerHTML = `${weekNum}: <a href="${url1}">${title1}</a> | <a href="${url2}">${title2}</a> | <a href="${url3}">${title3}</a> | <a href="${url4}">${title4}</a>`;
-//     }
-//     list.appendChild(activities);
-//   });
-// }
