@@ -170,9 +170,12 @@ div.cards{
     transform: scale(1.02);
     box-shadow: 3px 3px 10px #224b0c;
   }
+  div #spotlight-banner {
+    display: inline;
+    align-items: center;
+
+  }
    /* join */
-
-
 
   footer {
     display: grid;
@@ -193,3 +196,5 @@ div.cards{
     gap: 10px;
   }
 }
+
+
