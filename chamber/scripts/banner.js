@@ -6,6 +6,10 @@ if (today.getDay() == 0 || today.getDay() >= 4) {
   document.querySelector("#banner").className = "show";  
 }
 
-document.querySelector(".bannerClose").addEventListener("click", function(){
-  this.closest("#banner").style.display = "none";
+const bannerClose = document.querySelector('#close-banner');
+
+bannerClose.addEventListener('click', function() {
+    banner.style.display = "none";
+// document.querySelector(".bannerClose").addEventListener("click", function(){
+//   this.closest("#banner").style.display = "none";
 });
