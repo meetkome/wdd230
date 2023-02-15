@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
     <title>Eti-Osa Chamber of Commerce Home page</title>
     <meta name="description"
     content="Chamber of Commerce Website Home Page for WDD 230 class at BYU-Idaho">
@@ -14,28 +13,33 @@
     <meta property="og:type" content="website">
     <meta property="og:description" content="Eti-Osa Chamber of Commerce Home Page - WDD 230 - Oghenekome Igho">
     <meta property="og:image" content="https://images.app.goo.gl/ezPyra7S52Cxfwsv8">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" >
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.gstatics.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
+
     <header>
-        <img class="logo" src="images/logo.png" alt="Eti-Osa Chamber of Commerce Logo">
-        <div>
-            <h1 class="name">EtiOsa</h1>
-            <p class="chamber">Chamber of Commerce</p>
-        </div>
-        <nav>
-            <button id="menu-button"></button>
-            <ul>
-                <!-- <li><a id="menu-button" href="#"></a></li> -->
-                <li><a class="menu-items" href="index.html">Home</a></li>
+        <a href="#" class="logo"><img class="logoimg" src="images/logo.png" alt="Eti-Osa Chamber of Commerce Logo"><span>Eti-Osa Chamber</span></a>
+
+            <ul class="navbar">
+                <li><a class="main-active" href="index.html">Home</a></li>
                 <li class="active"><a class="menu-items" href="discover.html">Discover</a></li>
                 <li><a class="menu-items" href="directory.html">Directory</a></li>
-                <li><a class="menu-items" href="#">About</a></li>
-                <li><button type="button" onclick="location.href='join.html'" class="join">Join Us</button></li>
+                <li><a href="#">About</a></li>
             </ul>
-        </nav>
+            <div class="main">
+                <!-- <li><button type="button" onclick="location.href='join.html'" class="join">Join Us</button></li> -->
+                <a href="join.html" class="join"><i class="ri-user-fill"></i>Join Us</a>
+                <div class="bx bx-menu" id="menu-button"></div>
+            </div>
+          
     </header>
     <main >
         <h1 class="directory">Directory</h1>

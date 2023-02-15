@@ -27,7 +27,7 @@ async function getMembers() {
     }
   }
 
-  const memberCards = document.querySelector(".cards");
+  const memberCards = document.querySelector("#card");
     function displaySpotlight(member)  {
     const card = document.createElement("section");
 
@@ -60,8 +60,9 @@ async function getMembers() {
     card.appendChild(address);
     card.appendChild(phone);
     card.appendChild(website);
-    card.appendChild(memberLevel);
+    // card.appendChild(memberLevel);
     memberCards.appendChild(card);
   }
 
-  
+
+

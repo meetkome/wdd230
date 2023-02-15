@@ -15,34 +15,41 @@
     <meta property="og:image" content="https://images.app.goo.gl/ezPyra7S52Cxfwsv8">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" >
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.gstatics.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
+
     <header>
-        <img class="logo" src="images/logo.png" alt="Eti-Osa Chamber of Commerce Logo">
-        <div>
-            <h1 class="name">EtiOsa</h1>
-            <p class="chamber">Chamber of Commerce</p>
-        </div>
-        <nav>
-            <button id="menu-button"></button>
-            <ul>
-                <li><a class="menu-items" href="index.html">Home</a></li>
+        <a href="#" class="logo"><img class="logoimg" src="images/logo.png" alt="Eti-Osa Chamber of Commerce Logo"><span>Eti-Osa Chamber</span></a>
+
+            <ul class="navbar">
+                <li><a class="main-active" href="index.html">Home</a></li>
                 <li class="active"><a class="menu-items" href="discover.html">Discover</a></li>
                 <li><a class="menu-items" href="directory.html">Directory</a></li>
-                <li><a class="menu-items" href="#">About</a></li>
-                <li><button type="button" onclick="location.href='join.html'" class="join">Join Us</button></li>
+                <li><a href="#">About</a></li>
             </ul>
-        </nav>
+            <div class="main">
+                <!-- <li><button type="button" onclick="location.href='join.html'" class="join">Join Us</button></li> -->
+                <a href="join.html" class="join"><i class="ri-user-fill"></i>Join Us</a>
+                <div class="bx bx-menu" id="menu-button"></div>
+            </div>
+          
     </header>
-
-    <p id="banner"><strong>Meet and greet on Wednesday at 7:00 p.m.</strong> <span
-        id="close-banner">❌</span></p>
+    
    
     <main class="home-grid">
+        <section id="banner">
+            <h4><strong>Meet and greet on Wednesday at 7:00 p.m.</strong> <span
+            id="close-banner">❌</span></h4>
+          </section>    
         <div class="cards">
+   
                 <section class="news">
                     <h2>Today's News</h2>
                     <p class="par">Onyeka, the Director, Transparent Protection Ltd. (TPL)/Gte, a Non-Governmental Organisation (NGO), said that the review would <br>
@@ -68,15 +75,25 @@
                     <ol class="forecast" id="forecastLow">
                         <li>Lows</li>
                     </ol>
-
+                 
             </section>
-            <section>
-                <div id="spotlight-banner"><h2>Spotlight</h2>
-                </div>
-            </section>
-                
+               
         </div>
-       
+        <h2>Spotlight Members</h2> 
+       <div id="card" class="member">
+      
+       </div>
+        <!-- <div id="members">
+            <h2 id="member-heading">Members</h2>
+            <section class="member">
+            </section>
+            <section class="member">
+            </section>
+            <section class="member">
+            </section>
+            <section class="member">
+            </section>
+          </div> -->
     </main>
     
     <footer>
