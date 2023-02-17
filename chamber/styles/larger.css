@@ -276,7 +276,7 @@ margin-left: 10px;
   }
 }
 
-  @media (max-width: 1090px) {
+  @media (max-width: 40rem) {
     #menu-button{
       display: block;
     }
