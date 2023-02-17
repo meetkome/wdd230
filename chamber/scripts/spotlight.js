@@ -27,7 +27,8 @@ async function getMembers() {
     }
   }
 
-  const memberCards = document.querySelector("#card");
+  // const memberCards = document.querySelector("#card");
+  const memberCards = document.querySelector(".cards");
     function displaySpotlight(member)  {
     const card = document.createElement("section");
 

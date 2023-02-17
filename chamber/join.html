@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="preconnect" href="https://fonts.gstatics.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="images/favicon.ico">
@@ -64,7 +65,7 @@
                     <label class="sbs"> <input type="radio" name="mbrlevel" value="gold"> Gold Membership </label>
                     <label for="comments" class="top">Brief information about company:<textarea id="comments" name="comments" required></textarea></label>
                 </fieldset>
-                   
+                <input type="hidden" name="date" value=""> 
                 <input type="submit" value="Become a Membership" class="submitBtn">
             </form>
         </div>
@@ -143,8 +144,6 @@
     
     <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>   
     <script src="scripts/chamber.js"></script>
-    <script src="scripts/weather.js"></script>
-    <script src="scripts/banner.js"></script>
-    <script src="scripts/spotlight.js"></script>
+    <script src="scripts/forms.js"></script>
 </body>
 </html>

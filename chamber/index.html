@@ -21,6 +21,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
@@ -42,12 +43,12 @@
           
     </header>
     
-   
+    <section id="banner">
+        <h4><strong>Meet and greet on Wednesday at 7:00 p.m.</strong> <span
+        id="close-banner">❌</span></h4>
+      </section> 
     <main class="home-grid">
-        <section id="banner">
-            <h4><strong>Meet and greet on Wednesday at 7:00 p.m.</strong> <span
-            id="close-banner">❌</span></h4>
-          </section>    
+   
         <div class="cards">
    
                 <section class="news">
@@ -57,7 +58,7 @@
             </section>
             <div class="contact">
                 <button class="jn">Contact</button> 
-                <button class="discover">Discover +</button>
+                <button type="button" onclick="location.href='discover.html'" class="discover">Discover +</button>
             </div>
                     
             <div class="hero-card">
@@ -77,23 +78,13 @@
                     </ol>
                  
             </section>
-               
+            <!-- <h2 class="members-heading">Spotlight Members</h2>
+            <div id="card" class="member"> -->
+                <div id="spotlight-banner"><h2>Our Members</h2></div>
+            
+            </div>
         </div>
-        <h2>Spotlight Members</h2> 
-       <div id="card" class="member">
-      
-       </div>
-        <!-- <div id="members">
-            <h2 id="member-heading">Members</h2>
-            <section class="member">
-            </section>
-            <section class="member">
-            </section>
-            <section class="member">
-            </section>
-            <section class="member">
-            </section>
-          </div> -->
+       
     </main>
     
     <footer>

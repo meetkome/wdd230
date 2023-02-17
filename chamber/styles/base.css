@@ -1,5 +1,18 @@
+  /* HOME */
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    font-family: 'Open Sans', 'Benas Neue';
+    text-decoration: none;
+    list-style: none;
+  }
 
 
+
+
+
+  
 /* banner */
 p#banner {
   text-align: center;
@@ -40,6 +53,12 @@ p#banner {
 }
 
 
+
+/* Thank you  */
+main div.thanks {
+  text-align: center;
+}
+
 div.cards {
   display: flex;
   flex-direction: column;
@@ -49,62 +68,42 @@ div.cards {
   gap: 0.5rem;
   padding: 1rem 2rem;
 }
-
 /* spotlight cards */
-div#cards {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  text-align: center;
-  align-items: stretch;
-  gap: 0.5rem;
-  padding: 1rem 2rem;
-}
-.member {
-  display: flex;
-  flex-direction: row;
-  gap: 25rem;
-  padding: 3rem;
-  text-align: center;
-  height: 20rem;
+div#spotlight-banner {
+  grid-column: 1 / -1;
+  margin-top: 1rem;
+  background-color: #fcfcfb;
+  opacity: 0.8;
   align-items: center;
- 
-  width: 20em;
-  border-radius: 10%;
-  margin-bottom: 40px ;
-  margin-top: 100px;
 }
- 
-
-.member img {
-  border-radius: 25%;
-  
-  justify-self: center;
-  /* width: 50%; */
-
-}
-
-.member h2 {
-
-  font-size: 1.5rem;
-  font-weight: 700;
+div#spotlight-banner h2 {
   margin: 0;
-  padding: 0;
-  color: var(--accent3-color);
+  color:black;
+  padding: 0.5rem;
 }
 
-.member p {
-  
-  font-size: 1rem;
-  font-weight: 700;
-  margin: 0;
-  padding: 0;
-  color: var(--accent2-color);
+.spotlight img {
+  max-width: 100%; 
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
-.member a {
-  color: rgb(255, 147, 147);
+.spotlight a {
+  color: black;
 }
+
+div.cards section {
+  background-color: #fcfcfb;
+  border: 1px solid black;
+  max-width: 100%;
+  padding: 1rem;
+}
+
+main .cards h2 {
+  margin-top: 0;
+}
+
 
 
 .icon a{
@@ -147,38 +146,32 @@ footer a {
 
 
 /* CSS for DISCOVER */
-  div.discover {
-    background-color: #b1e99f;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  div.discover h1 {
-    text-align: center;
-    margin-bottom: 0;
-    border-bottom: solid 2px #224b0c;
-  }
-  
-  div.discover hr {
-    height: 2px;
-    background-color: #224b0c;
-    margin: 0;
-  }
-  section.demographics {
-    text-align: center;
-    margin: 1rem;
-  }
-  
-  section.discover-imgs figure {
-    text-align: center;
-  }
-  
-  section.discover-imgs img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    border: solid 1px #224b0c;
-  }
+
+div.discover h1 {
+  text-align: center;
+  margin-bottom: 0;
+  border-bottom: solid 2px black;
+  margin-top: 100px;
+}
+
+div.discover hr {
+  height: 2px;
+  background-color: #fcfcfb;
+  margin: 0;
+}
+
+
+section.discover-imgs figure {
+  text-align: center;
+}
+
+section.discover-imgs img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  border: solid 1px #224b0c;
+}
+
  /* CSS for join */
  .form-heading{
   margin-top: 60px;
