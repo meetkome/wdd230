@@ -29,7 +29,7 @@
           "title":"Responsive Menu"
         },
         {
-          "url":"https://meetkome.github.io/wdd230/week02/bom.html",
+          "url":"week02/bom2.html",
           "title":"BOM"
         }
 
@@ -51,7 +51,7 @@
         "title":"Responsive Images"
       },
       {
-        "url":"https://meetkome.github.io/wdd230/week03/bom2.html",
+        "url":"https://meetkome.github.io/wdd230/week03/bom.html",
         "title":"BOM local storage"
       }
     ]
@@ -66,6 +66,10 @@
       {
         "url":"images/w3school-excercise.webp",
         "title":"Combinator"
+      },
+      {
+        "url":"week04/tablebuild.html",
+        "title": "Table"
       },
       {
         "url":"week04/form-start/index.html",
