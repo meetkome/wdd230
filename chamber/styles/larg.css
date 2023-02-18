@@ -1,9 +1,10 @@
-@media only screen and (min-width: 40rem) {
+@media only screen and (min-width: 65rem) {
   :root{
     --bg-color: #fcfccb;
     --text-color: black;
     --main-color: #fde33b;
    }
+
     header {
         position: fixed;
         width: 100%;
@@ -304,7 +305,7 @@ form label.top, form div{
   font-size: .85rem;
 }
 form label.top input, form label.top select, form label.top textarea{
-  /* -webkit-appearance: none; */
+  -webkit-appearance: none;
   display: block;
   font-size: 1rem;
   border: solid 1px black;

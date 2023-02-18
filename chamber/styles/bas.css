@@ -7,7 +7,11 @@
     text-decoration: none;
     list-style: none;
   }
-  
+     /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
    body {
       background: linear-gradient(to top, #fcfcfb , #b1e99f, #fde33b, #fcfcfb 90%);
@@ -313,15 +317,17 @@ form input:required:invalid {
   border-left: solid red 6px;
 }
 
-form input[type="submit"] {
-  width: 15rem;
-  border: solid black 1px;
-  padding: 1rem;
-  background-color: #b59d45;
-  border-radius: 10px;
-  cursor: pointer;
-}
 
+form input.submitBtn{
+  border: none;
+  background-color: #9c2c13;
+  color: white;
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  margin: .75rem 0 2rem 2%;
+  width: 96%;
+  max-width: 96%;
+}
 div.output-msg {
   text-align: center;
   margin: 1rem;
