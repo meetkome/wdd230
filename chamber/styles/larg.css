@@ -5,7 +5,7 @@
     --main-color: #fde33b;
    }
 
-    header {
+    /* header {
         position: fixed;
         width: 100%;
         top: 0;
@@ -15,7 +15,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        /* background: transparent; */
+        background: transparent;
         background: #fcfcfb;
         padding: 28px 12%;
         transition: all .50s ease;
@@ -82,6 +82,26 @@
         cursor: pointer;
         z-index: 10001;
         display: none;
+      } */
+
+
+      #menu-button{
+        display: block;
+      }
+   
+      .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 270px;
+        height: 29vh;
+        background-color: var(--main-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;
+  
       }
       
       div.cards{
@@ -304,8 +324,16 @@ form label.top, form div{
   color: blue;
   font-size: .85rem;
 }
+
+     /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+     /* html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;} */
+
+     /*----------- apply a natural box layout model to all elements --------------*/
+     /* * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; } */
+
+
 form label.top input, form label.top select, form label.top textarea{
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
   display: block;
   font-size: 1rem;
   border: solid 1px black;
