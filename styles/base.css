@@ -74,22 +74,22 @@ nav #menu-button.close::before {
 header {
     display: grid;
     grid-template-columns: auto 1fr;
-    /* grid-template-columns: repeat(3, 1fr); */
+    justify-content: center;
     padding: 20px;
     background-color: rgb(56, 3, 40);
+    
+
 }
+
 header h1 {
     color: white;
     text-align: center;
     font-size: 45px;
     margin-top: 75px;
-    font-family: Alegreya Sans SC;
+    font-family: "Alegreya Sans SC";
     text-transform: uppercase;
 }
-/* svg {
-    filter: brightness(0) invert(1);
-    color: yellow;
-} */
+
 #profile {
     max-width: 125px;
     height: auto;
@@ -190,6 +190,7 @@ section h3 {
 
 #maps {
     margin: 1rem;
+    width: 100%;
   }
 
 

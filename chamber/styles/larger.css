@@ -1,5 +1,4 @@
 
-/* @media (min-width: 1090px){ */
   :root{
    --bg-color: #fcfccb;
    --text-color: black;
@@ -123,14 +122,14 @@
 }
 .news .par{
   padding-bottom: 2px;
-  font-family: Open Sans;
+  font-family: "Open Sans";
   letter-spacing: 1px;
   line-height: 30px;
   font-size: 1.2em;
  
 }
 .news h1{
-    font-family: Bebas Neue;
+    font-family: "Bebas Neue";
     font-size: 40px;
     text-decoration: solid;
     
@@ -148,7 +147,7 @@
     margin-top: 105px;
     padding: 15px 20px;
     text-decoration: none;
-    font-family: Open Sans;
+    font-family: "Open Sans";
     cursor: pointer;
 }
 .contact .jn a {
@@ -162,14 +161,14 @@
     height: 30px;
     margin-left: 10px;
     text-decoration: none;
-    font-family: Open Sans;
+    font-family: "Open Sans";
     cursor: pointer;
     background: none;
     border-color: #b1e99f;
 }
 .contact .discover a {
     text-decoration: none;
-    font-family: Open sans;
+    font-family: "Open sans";
     color: black;
     font-size: 12px;
 } 
@@ -264,7 +263,7 @@ margin-left: 10px;
     transform: scale(1.02);
     box-shadow: 3px 3px 10px #224b0c;
   }
-  
+
 @media (max-width:1280px){
   header{
     padding: 14px 2%;
@@ -276,7 +275,7 @@ margin-left: 10px;
   }
 }
 
-  @media (max-width: 40rem) {
+  @media (max-width: 1090px) {
     #menu-button{
       display: block;
     }
