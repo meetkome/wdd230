@@ -253,10 +253,10 @@ footer a {
   padding: 0.5rem;
 }
 div.discover {
-  background-color: #fde33b;
   display: flex;
   flex-direction: column;
-  
+  line-height: 2.5rem;
+  letter-spacing: 1.5px;
 }
 
 div.discover h1 {
@@ -265,7 +265,10 @@ div.discover h1 {
   border-bottom: solid 2px black;
   margin-top: 75px;
 }
-
+div.discover .label, h2{
+  font-family: "Bebas Neue", "Open Sans";
+  font-size: 22px;
+}
 div.discover hr {
   height: 2px;
   background-color: #224b0c;
@@ -275,7 +278,9 @@ section.demographics {
   text-align: center;
   margin: 1rem;
 }
-
+div .discover-imgs h2 {
+  text-align: center;
+}
 section.discover-imgs figure {
   text-align: center;
 }
