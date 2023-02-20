@@ -197,28 +197,28 @@
     }
     
     
-      div#spotlight-banner h2 {
-      text-align: center;
-      }
-    
-      footer {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 1rem;
-        place-items: center;
-      }
-    
-      footer section:nth-child(1) {
-        display: grid;
-        grid-template-columns: 75px auto;
-      }
-    
-      footer section:nth-child(3) {
-        grid-column: 1 / -1;
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-      }
+  div#spotlight-banner h2 {
+  text-align: center;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    place-items: center;
+  }
+
+  footer section:nth-child(1) {
+    display: grid;
+    grid-template-columns: 75px auto;
+  }
+
+  footer section:nth-child(3) {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
 
        /* discover */
   div.discover {
@@ -309,12 +309,6 @@ form label.top, form div{
   color: blue;
   font-size: .85rem;
 }
-
-     /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-     /* html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;} */
-
-     /*----------- apply a natural box layout model to all elements --------------*/
-     /* * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; } */
 
 
 form label.top input, form label.top select, form label.top textarea{
