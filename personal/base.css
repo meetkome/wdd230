@@ -8,124 +8,26 @@
     list-style: none;
   }
 
+
+
   :root{
     --bg-color: #fcfccb;
     --text-color: black;
     --main-color: #fde33b;
    }
 
-
-   body {
-      background: linear-gradient(to top, #fcfcfb , #b1e99f, #fde33b, #fcfcfb 90%);
-      max-height: 100vh;
-      /* color: var(--text-color); */
-   }
-
-
   
-div.cards {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+/* banner */
+p#banner {
   text-align: center;
-  align-items: stretch;
-  gap: 0.5rem;
-  padding: 1rem 2rem;
-}
-
-div.cards section {
-  background-color: #fcfcfb;
-  border: 1px solid black;
-  max-width: 100%;
-  padding: 1rem;
-}
-main .cards h2 {
-  margin-top: 0;
-}
-
-  .hero-img {
-width: 100%;
-} 
-section.weather p {
-  margin-bottom: 0;
-}
-
-section.weather section.forecast {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  text-align: center;
-  border: none;
-  background-color: transparent;
-  padding: 0;
-}
-section.weather h3 {
-  grid-column: 1 / -1;
-}
-section.weather ol{
-  list-style: none;
-  display: table;
-  padding: 0;
-  margin: 0 auto;
-  width: 100%;
-}
-
-section.weather li {
-  border: 1px solid black;
-  padding: 0.5rem;
-}
-
-
-/* spotlight cards */
-div#spotlight-banner {
-  grid-column: 1 / -1;
-  margin-top: 1rem;
-  background-color: #fcfcfb;
-  opacity: 0.8;
-}
-div#spotlight-banner h2 {
+  /* background-color: #fde33b; */
   margin: 0;
-  color:black;
-  padding: 0.5rem;
-}
-
-.spotlight img {
-  max-width: 100%; 
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-.spotlight a {
-  color: black;
-}
-
-
-footer {
-  display: grid;
-  grid-template-columns: 1fr;
-  background-color: #b1e99f;
-  color: black;
-}
-
-footer div {
   padding: 1rem;
 }
 
-footer p {
-  margin: 0;
-  line-height: 1.3rem;
-  color: black;
-  font-family:'Open Sans', Times, serif;
-  font-size: 1.2rem;
+#banner.hide {
+  display: none;
 }
-
-footer a {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: black;
-  font-weight: 200;
-}
-
-
 .weather-card p {
   margin-bottom: 0;
 }
@@ -153,29 +55,117 @@ footer a {
   border: 1px solid black;
   padding: 0.5rem;
 }
-div.discover {
-  background-color: #fde33b;
+
+
+
+/* Thank you  */
+main div.thanks {
+  text-align: center;
+}
+
+div.cards {
   display: flex;
   flex-direction: column;
-  
+  justify-content: center;
+  text-align: center;
+  align-items: stretch;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
 }
+/* spotlight cards */
+div#spotlight-banner {
+  grid-column: 1 / -1;
+  margin-top: 1rem;
+  background-color: #fcfcfb;
+  opacity: 0.8;
+  align-items: center;
+}
+div#spotlight-banner h2 {
+  margin: 0;
+  color:black;
+  padding: 0.5rem;
+}
+
+.spotlight img {
+  max-width: 100%; 
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.spotlight a {
+  color: black;
+}
+
+div.cards section {
+  background-color: #fcfcfb;
+  border: 1px solid black;
+  max-width: 100%;
+  padding: 1rem;
+}
+
+main .cards h2 {
+  margin-top: 0;
+}
+
+
+
+.icon a{
+    margin-top: 20px;
+    text-decoration: none;
+    color: black;
+  }
+
+  footer .icon{
+margin-top: 50px;
+    padding-top: 5px;
+}
+
+
+
+footer {
+  display: grid;
+  background-color: #b1e99f;
+  color: black;
+}
+
+footer div {
+  padding: 1rem;
+}
+
+footer p {
+  margin: 0;
+  line-height: 1.3rem;
+  color: black;
+  font-family:'Open Sans', Times, serif;
+  font-size: 1.2rem;
+}
+
+
+
+
+footer a {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+  font-weight: 200;
+}
+
+
+/* CSS for DISCOVER */
 
 div.discover h1 {
   text-align: center;
   margin-bottom: 0;
   border-bottom: solid 2px black;
-  margin-top: 75px;
+  margin-top: 100px;
 }
 
 div.discover hr {
   height: 2px;
-  background-color: #224b0c;
+  background-color: #fcfcfb;
   margin: 0;
 }
-section.demographics {
-  text-align: center;
-  margin: 1rem;
-}
+
 
 section.discover-imgs figure {
   text-align: center;
@@ -188,12 +178,127 @@ section.discover-imgs img {
   border: solid 1px #224b0c;
 }
 
-/* directory */
-h1.directory {
+ /* CSS for join */
+ .form-heading{
+  margin-top: 60px;
+  margin-left: 70px;
+  margin-bottom: -2px;
+  text-align: left;
+}
+
+.form{
+  display: flex;
+  flex-direction: row;
+  column-gap: 50px;
+  margin: 0 70px;
+  color: black;
+
+}
+
+form fieldset{
+  margin:0 0;
+  border: var(--bg-color);
+  border-radius: 10px;
+  padding: .5px 2%;
+ 
+}
+form legend{
+  color: var(--text-color);
+  margin: 0 1rem;
+  padding: 0 .5rem;
+}
+.output-msg legend{
+color: var(--text-color);
+  margin: 0 1rem;
+  padding: 0 .5rem;
+  
+}
+form label.top, form div{
+  display: block;
+  padding-top: 1rem;
+  color: blue;
+  font-size: .85rem;
+}
+form label.top input, form label.top select, form label.top textarea{
+  /* -webkit-appearance: none; */
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: .75rem;
+  color: #555;
+  width: 100%;
+  background-color: rgba(0,0,0,0.1);
+}
+
+.output-msg fieldset{
+  margin:0 0;
+  border: var(--bg-color);
+  border-radius: 10px;
+  padding: .5px 2%;
+  height: 90.6%;
+}
+
+
+
+form input.submitBtn{
+  border: none;
+  background-color: #9c2c13;
+  color: white;
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  margin: .75rem 0 2rem 2%;
+  width: 96%;
+  max-width: 96%;
+}
+form label.top input:required{
+  border-left: red solid 6px;
+}
+form label.top input:required:valid{
+  border-left: green solid 6px;
+}
+
+.input-msg{
+  width: 50%;
+}
+.output-msg{
+  width: 50%;
+  
+}
+form label.sbs{
+  display: block;
+  padding: .75rem 0;
+  color: #555;
+}
+form label.sbs, input{
+margin-right: 10px;
+font-size: 0.8rem;
+}
+.input-msg p{
+color: rgb(23, 59, 39);
+margin-bottom: -7px;
+font-size: 0.8rem;
+}
+
+.output-msg p{
+font-size: 16px;
+padding-top: 20px;
+}
+
+
+/*thanks.html page*/
+.thanks, .thanks ~ p{
+margin-top: 50px;
+color: rgb(23, 59, 39);
+text-align: center;
+}
+
+
+/* CSS for directory */
+h1.directory{
   text-align: center;
   margin-bottom: 1rem;
   border-bottom: solid 2px #224b0c;
-  margin-top: 75px;
 }
 
 div.menu {
@@ -210,11 +315,6 @@ div#members a {
   color: black;
 }
 
-div#members img {
-  max-width: 100%;
-  height: auto;
-}
-
 /*Grid*/
 div.grid {
   max-width: 1000px;
@@ -229,6 +329,7 @@ div.grid section {
   margin: 0.5rem;
   border: solid 1px #224b0c;
   border-radius: 5px;
+  background-color: #fcfcfb;
 }
 
 div.grid img {
@@ -236,7 +337,8 @@ div.grid img {
   margin: 0.5rem;
 }
 div.grid h3,
-div.grid p {
+div.grid
+p {
   margin: 0.2rem 0;
 }
 
@@ -260,6 +362,42 @@ div.list img {
   height: auto;
   justify-self: center;
 }
+
+/* spotlight cards */
+
+
+
+
+
+/* BANNER */
+.banner {
+  background:none;
+}
+.bannerContent {
+  padding: 16px;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.bannerText {
+  flex-grow: 1;
+  line-height: 1.4;
+  font-family: 'Quicksand', Open-sans;
+  font-size: 18px;
+}
+
+.bannerClose {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.bannerText,
+.bannerClose > span {
+  color: black;
+}
+
 
 
 /* join */
@@ -347,85 +485,3 @@ div.output-msg p {
 main div.thanks {
   text-align: center;
 }
-
-header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  right: 0;
-  height: 20px;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: transparent;
-  background: #fcfcfb;
-  padding: 28px 12%;
-  transition: all .50s ease;
- }
- .logo {
-  display:flex;
-  align-items: center;
-}
-.logo img {
-  margin-right:3px ;
-}
-.logo span{
-  color: var(--text-color);
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-.navbar{
-  display: flex;
-}
-.navbar a{
-  color: var(--text-color);
-  font-size: 1.1rem;
-  font-weight: 500;
-  padding: 5px 0;
-  margin: 0px 30px;
-  transition: all .50s ease;
-}
-.navbar a:hover{
-  color: var(--main-color);
-}
-.navbar a.main-active{
-  color: var(--main-color);
-}
-.main{
-  display: flex;
-  align-items: center;
-}
-.main a{
-  margin: 25px;
-  margin-left: 10px;
-  color: var(--text-color);
-  font-size: 1.1rem;
-  font-weight: 500;
-  transition: all .50s ease;
-}
-.join {
-  display: flex;
-  align-items: center;
-  border-radius: 10px;
-  padding: 0 30px;
-}
-.join i{
-  color:black;
-  font-size: 28px;
-  margin-right: 7px;
-}
-.main a:hover {
-  color:var(--main-color);
-}
-
-#menu-button {
-  color: var(--text-color);
-  font-size: 35px;
-  cursor: pointer;
-  z-index: 10001;
-  display: none;
-}
-
-
-
