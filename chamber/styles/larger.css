@@ -269,7 +269,7 @@
     /* join */
 /* CSS for join */
 .form-heading{
-  margin-top: 60px;
+  
   margin-left: 70px;
   margin-bottom: -2px;
   text-align: left;
@@ -279,7 +279,7 @@
 .form{
   display: flex;
   flex-direction: row;
-  column-gap: 50px;
+  column-gap: 70px;
   margin: 0 70px;
   color: black;
  

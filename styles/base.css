@@ -1,12 +1,16 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&family=Dancing+Script&family=Open+Sans:wght@300&display=swap') */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+}
 
-  
   body {
     font-family: "Open Sans", Arial, Helvetica;
     background-color: rgb(223, 205, 219);  
-    position: relative
+  
 }
-html,
+/* html,
 body {
     overflow-x: hidden;
     width: 100%;
@@ -15,13 +19,16 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-}
+} */
 nav {
     display: flex;
     justify-content: right;
     background-color: rgb(56, 3, 40);
     gap: 1rem;
     padding: 1rem;
+    position: fixed;
+    width: 100%;
+
     
 }
 nav *:nth-child(1) {
@@ -33,6 +40,7 @@ nav a{
     color: rgb(56, 3, 40);
     padding: 20px;
     font-size: 20px;
+
 }
 #information {
   /* grid-column: 2 / 3; */
@@ -91,17 +99,22 @@ header {
     justify-content: center;
     padding: 20px;
     background-color: rgb(56, 3, 40);
+    width: 100%;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    right: 0;
     
-
 }
 
 header h1 {
     color: white;
     text-align: center;
-    font-size: 45px;
-    margin-top: 75px;
+    font-size: 30px;
+    margin-top: 50px;
     font-family: "Alegreya Sans SC";
     text-transform: uppercase;
+  
 }
 
 #profile {

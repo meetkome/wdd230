@@ -441,9 +441,10 @@ div.output-msg {
   text-align: center;
   margin: 1rem;
 }
-/* div.output-msg p {
-  margin-bottom: 0;
-} */
+ div.output-msg legend {
+  font-size: 22px;
+  font-weight: 600;
+} 
 
 div.output-msg p {
   margin: 0 0.5rem;
