@@ -49,7 +49,7 @@ nav a{
 
 
 nav .menu {
-	position: absolute;
+	position: sticky;
 	top: 0;
 	right: 0;
 	list-style-type: none;
