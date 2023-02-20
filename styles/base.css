@@ -134,8 +134,10 @@ main.dark section {
 }
 .hero img {
     width: 100%;
-    /* height: auto; */
+    height: auto;
+    position: relative;
   }
+
   
   .hero {
     position: relative;
