@@ -18,7 +18,7 @@
    body {
       background: linear-gradient(to top, #fcfcfb , #b1e99f, #fde33b, #fcfcfb 90%);
       max-height: 100vh;
-      /* color: var(--text-color); */
+      color: var(--text-color);
    }
 
    header {
