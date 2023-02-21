@@ -275,10 +275,7 @@
   text-align: left;
 
 }
-/* main.joinform{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-} */
+
 .form{
   
   display: flex;
@@ -348,8 +345,8 @@ form input.submitBtn{
   border-radius: 1rem;
   padding: .75rem 1.5rem;
   margin: .75rem 0 2rem 2%;
-  width: 96%;
-  max-width: 96%;
+  /* width: 96%;
+  max-width: 96%; */
 }
 form label.top input:required{
   border-left: red solid 6px;
@@ -358,13 +355,13 @@ form label.top input:required:valid{
   border-left: green solid 6px;
 }
 
-.input-msg{
+/* .input-msg{
   width: 50%;
 }
 .output-msg{
   width: 50%;
   
-}
+} */
 form label.sbs{
   display: block;
   padding: .75rem 0;
@@ -388,12 +385,12 @@ text-align: justify;
 }
 
 
-thanks.html page
+/* thanks.html page
 .thanks, .thanks ~ p{
 margin-top: 50px;
-color: rgb(23, 59, 39);
+color: black;
 text-align: center;
-}
+} */
 
 }
 

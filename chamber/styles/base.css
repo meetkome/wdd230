@@ -435,8 +435,8 @@ form input.submitBtn{
   border-radius: 1rem;
   padding: .75rem 1.5rem;
   margin: .75rem 0 2rem 2%;
-  width: 96%;
-  max-width: 96%;
+  /* width: 96%; */
+  /* max-width: 96%; */
 }
 div.output-msg {
   text-align: center;
@@ -452,7 +452,10 @@ div.output-msg p {
 }
 
 /* Thank you  */
-main div.thanks {
-  text-align: center;
+thanks.html page
+.thanks, .thanks ~ p{
+margin-top: 50px;
+color: black;
+text-align: center;
 }
 
