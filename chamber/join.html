@@ -20,6 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatics.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="styles/normalize.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css"> -->
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="images/favicon.ico">
@@ -44,35 +45,35 @@
     </header>
     <main >
         <div class="form">
-        <section>
-            <h1 class="form-heading">Membership Form</h1><hr>
-            
-            
-                <div class="input-msg">
-                <form method="get" action="thanks.html">
-                        <fieldset>
-                            <legend>Member Information</legend>
-                            <label class="top">First Name:* <input type="text" name="fname" required></label>
-                            <label class="top">Last Name:* <input type="text" name="lname" required></label>
-                            <label class="top">Title: <input type="text" name="title" pattern="[A-Za-z -]{7,}"></label>
-                            <label class="top">Email* <input type="text" name="email" placeholder="someone@gmail.com" required></label>
-                            <label class="top">Phone Number: <input type="tel" name="phone" placeholder="1235551234"></label>
-                            <label class="top">Company Name:* <input type="text" name="company"  required></label>
-                            <label class="top">Website <input type="url" name="url" placeholder="https://"></label>
-        
-                            <p> Membership Level Selection </p>
-                            <label class="sbs"> <input type="radio" name="mbrlevel" value="non-profit"> Non-profit Membership </label>
-                            <label class="sbs"> <input type="radio" name="mbrlevel" value="bronze"> Bronze Membership </label>
-                            <label class="sbs"> <input type="radio" name="mbrlevel" value="silver"> Silver Membership </label>
-                            <label class="sbs"> <input type="radio" name="mbrlevel" value="gold"> Gold Membership </label>
-                            <label for="comments" class="top">Brief information about company:<textarea id="comments" name="comments" required></textarea></label>
-                        </fieldset>
-                        <input type="hidden" name="date" value=""> 
-                        <input type="submit" value="Become a Membership" class="submitBtn">
-                    </form>
+            <section>
+                <h1 class="form-heading">Membership Form</h1><hr>
                 
-            </div> 
-        </section>
+                
+                    <div class="input-msg">
+                    <form method="get" action="thanks.html">
+                            <fieldset>
+                                <legend>Member Information</legend>
+                                <label class="top">First Name:* <input type="text" name="fname" required></label>
+                                <label class="top">Last Name:* <input type="text" name="lname" required></label>
+                                <label class="top">Title: <input type="text" name="title" pattern="[A-Za-z -]{7,}"></label>
+                                <label class="top">Email* <input type="text" name="email" placeholder="someone@gmail.com" required></label>
+                                <label class="top">Phone Number: <input type="tel" name="phone" placeholder="1235551234"></label>
+                                <label class="top">Company Name:* <input type="text" name="company"  required></label>
+                                <label class="top">Website <input type="url" name="url" placeholder="https://"></label>
+            
+                                <p> Membership Level Selection </p>
+                                <label class="sbs"> <input type="radio" name="mbrlevel" value="non-profit"> Non-profit Membership </label>
+                                <label class="sbs"> <input type="radio" name="mbrlevel" value="bronze"> Bronze Membership </label>
+                                <label class="sbs"> <input type="radio" name="mbrlevel" value="silver"> Silver Membership </label>
+                                <label class="sbs"> <input type="radio" name="mbrlevel" value="gold"> Gold Membership </label>
+                                <label for="comments" class="top">Brief information about company:<textarea id="comments" name="comments" required></textarea></label>
+                            </fieldset>
+                            <input type="hidden" name="date" value=""> 
+                            <input type="submit" value="Become a Membership" class="submitBtn">
+                        </form>
+                    
+                </div> 
+            </section>
         
             <div class="output-msg">
                     

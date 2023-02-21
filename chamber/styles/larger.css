@@ -5,7 +5,7 @@
     --main-color: #fde33b;
    }
 
-    header {
+    /* header {
         position: fixed;
         width: 100%;
         top: 0;
@@ -15,11 +15,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        /* background: transparent; */
         background: #fcfcfb;
         padding: 35px 12%;
         transition: all .50s ease;
-       }
+       } */
 
       
       #menu-button {
