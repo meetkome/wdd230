@@ -457,8 +457,7 @@ div.output-msg p {
 }
 
 /* Thank you  */
-thanks.html page
-.thanks, .thanks ~ p{
+.thanks{
 margin-top: 50px;
 color: black;
 text-align: center;
