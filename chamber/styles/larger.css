@@ -62,29 +62,22 @@
         display: grid;
         grid-template-columns:  1fr 1fr 1fr;
         grid-template-rows:1fr 0.1fr;
-        gap: 60px;
-        justify-content: center;
-        text-align: center;
-        align-items: stretch;
-        gap: 0.5rem;
-        padding: 1rem 2rem;
-    
     }
     .news{
       grid-column: 1/1;
       grid-row: 1/1;
      
-        height: 300px;
-        width: 400px;
-        margin-top: 75px;
-        border: 1px solid #b1e99f;
-        transition: transform .5s;
-        background-color: #fcfcfb;
-        padding-bottom: 15px;
-        padding: 40px;
-        text-align: center;
-        box-shadow: 5px 5px 10px #01302a;
-        margin-left: 25px;
+      height: 300px;
+      width: 400px;
+      margin-top: 75px;
+      border: 1px solid #b1e99f;
+      transition: transform .5s;
+      background-color: #fcfcfb;
+      padding-bottom: 15px;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 5px 5px 10px #01302a;
+      margin-left: 25px;
     }
     .news .par{
       padding-bottom: 2px;
@@ -103,7 +96,7 @@
     .contact{
         grid-column: 1/1;
         grid-row: 1/-1;
-        margin-left: 25px;
+        margin-left: -9rem;
         margin-top: 55rem;
     }
     .contact.jn {
@@ -147,17 +140,17 @@
         width: 650px;
         height: 800px;
         margin-top: 75px;
-        margin-left:50px;
+        /* margin-left:50px; */
         /* position: absolute; */
       
     }
     .weather-card {
     grid-column: 3/3;
     grid-row: 1/1;
-    margin-left: 65px;
+    /* margin-left: 45px; */
     padding: 5px 30px;
     margin-top: 30rem;
-    width: 300px;
+    width: 350px;
     height: 400px;
     border-radius: 3px;
     box-shadow: 5px 5px 10px #01302a;
